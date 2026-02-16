@@ -1,0 +1,16 @@
+# Auto detect text files and normalize
+* text=auto
+
+# Force LF for these
+*.sh text eol=lf
+*.py text eol=lf
+
+# Force CRLF for these (if needed)
+*.bat text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+
+# Renormalize repo manually 'git add . --renormalize'
+# Display what needs to be fixed 'git ls-files --eol'
