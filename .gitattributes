@@ -1,16 +1,20 @@
 # Auto detect text files and normalize
 * text=auto
-
 # Force LF for these
 *.sh text eol=lf
 *.py text eol=lf
-
 # Force CRLF for these (if needed)
 *.bat text eol=crlf
-
 # Binary files
-*.png binary
-*.jpg binary
-
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
 # Renormalize repo manually 'git add . --renormalize'
 # Display what needs to be fixed 'git ls-files --eol'
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
