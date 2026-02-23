@@ -23,7 +23,8 @@ public class Paint : MonoBehaviour
 
     // caching of copied textures for resets and efficiency
     private Dictionary<GameObject, Texture2D> cachedTextures = new Dictionary<GameObject, Texture2D>();
-
+    private Dictionary<GameObject, Texture2D> originalTextures = new Dictionary<GameObject, Texture2D>();
+    
     // data acquired while runtime for painting
     private Vector2 pixelUV;
     private Texture2D copyTexture;
@@ -35,6 +36,7 @@ public class Paint : MonoBehaviour
     void Start()
     {
         particles.Stop();
+        CacheOriginalTextures();
     }
 
     void Update()
@@ -262,4 +264,87 @@ public class Paint : MonoBehaviour
         particles.Stop();
         continuePainting = false;
     }
+
+    // Fix the CacheOriginalTextures method - add a check before adding to dictionary
+private void CacheOriginalTextures()
+{
+    foreach (Transform paintableObject in paintableObjects)
+    {
+        if (paintableObject == null) continue;
+
+        GameObject obj = paintableObject.gameObject;
+        
+        // ADDED: Skip if already cached (prevents duplicates)
+        if (originalTextures.ContainsKey(obj))
+        {
+            Debug.LogWarning($"PAINT_GUN >>> {obj.name} is duplicated in paintableObjects array, skipping...");
+            continue;
+        }
+
+        Renderer renderer = paintableObject.GetComponent<Renderer>();
+        if (renderer == null) continue;
+
+        Texture mainTexture = renderer.material.mainTexture;
+        if (mainTexture == null)
+        {
+            mainTexture = renderer.material.GetTexture("_BaseMap");
+        }
+
+        if (mainTexture == null) continue;
+
+        // Create a copy of the original texture
+        Texture2D originalCopy = null;
+
+        if (mainTexture is RenderTexture renderTexture)
+        {
+            RenderTexture.active = renderTexture;
+            originalCopy = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGBA32, false);
+            originalCopy.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+            originalCopy.Apply();
+            RenderTexture.active = null;
+        }
+        else if (mainTexture is Texture2D texture2D)
+        {
+            RenderTexture rt = RenderTexture.GetTemporary(texture2D.width, texture2D.height, 0, RenderTextureFormat.ARGB32);
+            Graphics.Blit(texture2D, rt);
+            RenderTexture.active = rt;
+            originalCopy = new Texture2D(texture2D.width, texture2D.height, TextureFormat.RGBA32, false);
+            originalCopy.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
+            originalCopy.Apply();
+            RenderTexture.active = null;
+            RenderTexture.ReleaseTemporary(rt);
+        }
+
+        if (originalCopy != null)
+        {
+            originalTextures.Add(obj, originalCopy);
+            Debug.Log($"PAINT_GUN >>> Cached original texture for: {obj.name}");
+        }
+    }
+}
+
+// Add this new public method to reset all textures
+public void ResetAllTextures()
+{
+    foreach (var kvp in originalTextures)
+    {
+        GameObject obj = kvp.Key;
+        Texture2D originalTexture = kvp.Value;
+
+        if (obj == null) continue;
+
+        Renderer renderer = obj.GetComponent<Renderer>();
+        if (renderer == null) continue;
+
+        // Restore the original texture
+        renderer.material.SetTexture("_BaseMap", originalTexture);
+        
+        Debug.Log($"PAINT_GUN >>> Reset texture for: {obj.name}");
+    }
+
+    // Clear the modified texture cache
+    cachedTextures.Clear();
+    
+    Debug.Log("PAINT_GUN >>> All textures reset to original state");
+}
 }
