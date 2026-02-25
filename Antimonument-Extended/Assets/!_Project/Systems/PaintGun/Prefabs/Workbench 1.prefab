@@ -5626,6 +5626,7 @@ MonoBehaviour:
   paintableObjects:
   - {fileID: 0}
   colourpicker: {fileID: 866807842806174169}
+  paintCanister: {fileID: 2100000, guid: c6c5e5162732725f99ac7aa228f8a6b1, type: 2}
 --- !u!114 &8188092305298275489
 MonoBehaviour:
   m_ObjectHideFlags: 0
