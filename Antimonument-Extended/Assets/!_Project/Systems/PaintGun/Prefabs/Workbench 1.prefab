@@ -5358,7 +5358,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 6271573414225017425, guid: 663f2a43233708b1ba3ddb0a70cb5e45, type: 3}
-  - {fileID: -1294284738371021749, guid: 663f2a43233708b1ba3ddb0a70cb5e45, type: 3}
+  - {fileID: 2100000, guid: c6c5e5162732725f99ac7aa228f8a6b1, type: 2}
   - {fileID: 1108147716743453759, guid: 663f2a43233708b1ba3ddb0a70cb5e45, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5619,8 +5619,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Paint
   color: {r: 0.39417946, g: 0.60870844, b: 0.8113208, a: 1}
   radius: 50
-  paintDistance: 10000
+  opacity: 1
+  falloffRange: 1
   particles: {fileID: 3346827090207347000}
+  paintDistance: 10000
   paintableObjects:
   - {fileID: 0}
   colourpicker: {fileID: 866807842806174169}

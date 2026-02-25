@@ -19,6 +19,7 @@ public class Paint : MonoBehaviour
     
     [Header("Colour Picker")]
     [SerializeField] private Transform colourpicker;
+    [SerializeField] private Material paintCanister;
 
 
     // caching of copied textures for resets and efficiency
@@ -89,6 +90,8 @@ public class Paint : MonoBehaviour
 
             ParticleSystem.MainModule main = particles.main;
             main.startColor = color;
+
+            paintCanister.color = color;
         }
 
     }
