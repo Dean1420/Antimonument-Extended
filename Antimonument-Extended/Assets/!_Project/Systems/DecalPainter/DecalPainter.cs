@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TextureDecalPainter : MonoBehaviour
+public class DecalPainter : MonoBehaviour
 {
     [Header("Decal Settings")]
     [SerializeField] private Sprite decalSprite;
@@ -13,27 +13,6 @@ public class TextureDecalPainter : MonoBehaviour
     [SerializeField] private float paintDistance = 100f;
     [SerializeField] private Transform[] paintableObjects;
     [SerializeField] private Transform decalContainer;
-
-    [Header("Continuous Spray")]
-    [SerializeField] private bool continuousSpray = false;
-    [SerializeField] private float sprayRate = 0.1f; // Time between each spray
-    private float nextSprayTime = 0f;
-
-// Toggle continuous spray on/off
-public void ToggleContinuousPainting(bool enabled)
-{
-    continuousSpray = enabled;
-}
-
-// Call this in Update to handle continuous spraying
-private void Update()
-{
-    if (continuousSpray && Time.time >= nextSprayTime)
-    {
-        Paint();
-        nextSprayTime = Time.time + sprayRate;
-    }
-}
 
     // Call this single function to paint
     public void Paint()
@@ -50,25 +29,7 @@ private void Update()
 
         if (decalSprite == null) return;
 
-
-        Debug.Log("TEXTURE_PAINTER >>> hit: " + hit.collider.gameObject.name);
-        CreateDecal(hit);
-
-       
-    }
-
-    private bool IsPaintable(GameObject obj)
-    {
-        foreach (Transform paintable in paintableObjects)
-        {
-            if (paintable != null && paintable.gameObject == obj)
-                return true;
-        }
-        return false;
-    }
-
-    public void CreateDecal(RaycastHit hit)
-    {
+        // Create decal
         GameObject decalObj = new GameObject("Decal");
         SpriteRenderer sr = decalObj.AddComponent<SpriteRenderer>();
         sr.sprite = decalSprite;
@@ -82,6 +43,16 @@ private void Update()
             decalObj.transform.parent = decalContainer;
         else
             decalObj.transform.parent = hit.transform;
+    }
+
+    private bool IsPaintable(GameObject obj)
+    {
+        foreach (Transform paintable in paintableObjects)
+        {
+            if (paintable != null && paintable.gameObject == obj)
+                return true;
+        }
+        return false;
     }
 
     public void ClearAll()
