@@ -5,8 +5,9 @@ using FileOperations;
 using UnityEngine.Networking;
 using System.Collections;
 
-
-
+// lcc/lcc-result/Virtuelles Studio.lcc
+// lcc2/lcc2-result/Landschaftspark2.lcc2
+// ply/point_cloud/iteration_100/point_cloud_3.ply
 public class LCCRenderer : MonoBehaviour
 {
     public LCCManager m_manager;
@@ -24,7 +25,7 @@ public class LCCRenderer : MonoBehaviour
 
         m_FilePath = BuildFilePath();
 
-        LogDebugInfo();
+        //LogDebugInfo();
 
         if (!File.Exists(m_FilePath))
         {
@@ -42,16 +43,27 @@ public class LCCRenderer : MonoBehaviour
     }
 
     private string BuildFilePath()
-    {
-        string windowsPath = Path.Combine(StreamingAssetsPaths.GaussianSplats, filename).Replace('/', '\\');
-        string unixPath = Path.Combine(StreamingAssetsPaths.GaussianSplats, filename).Replace('\\', '/');
-
-        if (File.Exists(windowsPath)) return windowsPath;
-        if (File.Exists(unixPath)) return unixPath;
-
-        Debug.LogError("LCC_RENDERER >>> Could not find file on any platform path.");
-        return null;
-    }
+{
+    string combinedPath = Path.Combine(StreamingAssetsPaths.GaussianSplats, filename);
+    
+    Debug.Log("LCC_RENDERER >>> StreamingAssets base: " + StreamingAssetsPaths.GaussianSplats);
+    Debug.Log("LCC_RENDERER >>> Filename: " + filename);
+    Debug.Log("LCC_RENDERER >>> Combined path: " + combinedPath);
+    
+    string windowsPath = combinedPath.Replace('/', '\\');
+    string unixPath = combinedPath.Replace('\\', '/');
+    
+    Debug.Log("LCC_RENDERER >>> Windows path: " + windowsPath);
+    Debug.Log("LCC_RENDERER >>> Unix path: " + unixPath);
+    Debug.Log("LCC_RENDERER >>> Windows exists: " + File.Exists(windowsPath));
+    Debug.Log("LCC_RENDERER >>> Unix exists: " + File.Exists(unixPath));
+    
+    if (File.Exists(windowsPath)) return windowsPath;
+    if (File.Exists(unixPath)) return unixPath;
+    
+    Debug.LogError("LCC_RENDERER >>> Could not find file on any platform path.");
+    return null;
+}
 
     private IEnumerator LoadFromStreamingAssetsOnAndroid()
     {
@@ -84,21 +96,29 @@ public class LCCRenderer : MonoBehaviour
     }
 
     private void LoadFile()
-    {
-        try
+{
+        Debug.Log("LCC_RENDERER >>> m_manager is null? " + (m_manager == null));
+        
+        m_renderer = m_manager.GetRender(this.transform);
+        
+        Debug.Log("LCC_RENDERER >>> m_renderer is null? " + (m_renderer == null));
+
+        PlatformType platform = PlatformType.PC;
+        if (useStreamingAssetsOnAndroid)
         {
-            m_renderer = m_manager.GetRender(this.transform);
-            m_renderer.Load(m_FilePath, PlatformType.PC, onLoadCallback);
+            platform = PlatformType.Quest;
         }
-        catch (System.Exception e)
-        {
-            Debug.LogError("LCC_RENDERER >>> Failed to load: " + e.Message);
-            Debug.LogError("LCC_RENDERER >>> Stack trace: " + e.StackTrace);
-        }
-    }
+        
+
+
+        Debug.Log("LCC_RENDERER >>> About to load: " + m_FilePath);
+        m_renderer.Load(m_FilePath, platform, onLoadCallback);
+    
+}
 
     private void onLoadCallback()
     {
         Debug.Log("LCC_RENDERER >>> Loaded successfully!");
     }
 }
+
