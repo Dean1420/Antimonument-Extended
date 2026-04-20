@@ -20,27 +20,27 @@ public class LCCRenderer : MonoBehaviour
     private LCCCore.Renderer m_renderer;
 
     void Start()
+{
+    transform.localScale = Vector3.one * scale;
+    
+    // Check Android FIRST, before file existence
+    if (useStreamingAssetsOnAndroid)
     {
-        transform.localScale = Vector3.one * scale;
-
-        m_FilePath = BuildFilePath();
-
-        //LogDebugInfo();
-
-        if (!File.Exists(m_FilePath))
-        {
-            Debug.LogError("LCC_RENDERER >>> File not found: " + m_FilePath);
-            return;
-        }
-
-        if (useStreamingAssetsOnAndroid)
-        {
-            StartCoroutine(LoadFromStreamingAssetsOnAndroid());
-            return;
-        }
-
-        LoadFile();
+        StartCoroutine(LoadFromStreamingAssetsOnAndroid());
+        return;
     }
+    
+    // Now do the normal file path logic for PC/Linux
+    m_FilePath = BuildFilePath();
+    
+    if (!File.Exists(m_FilePath))
+    {
+        Debug.LogError("LCC_RENDERER >>> File not found: " + m_FilePath);
+        return;
+    }
+    
+    LoadFile();
+}
 
     private string BuildFilePath()
 {
