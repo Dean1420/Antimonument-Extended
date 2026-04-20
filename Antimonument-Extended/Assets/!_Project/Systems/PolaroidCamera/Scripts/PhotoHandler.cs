@@ -123,7 +123,7 @@ public class PhotoHandler : MonoBehaviour
 
     void UploadPolaroid()
     {       
-        Debug.Log(RuntimePaths.Runtime);
+        Debug.Log(PersistentDataPaths.Runtime);
         Images.SaveTextureAsJpg(currentImage, "Polaroid/", "Test.jpg");
         
         // Commented out because the credentials are not updated yet
@@ -148,7 +148,7 @@ public class PhotoHandler : MonoBehaviour
 
     private Dictionary<string, string> LoadCredentials()
     {
-        string pathToCredentials =  Application.dataPath + "/" + "!_Project/Data/Credentials/Secrets/FTP.txt";
+        string pathToCredentials =  Application.dataPath + "/" + "StreamingAssets/Data/Credentials/Secrets/FTP.txt";
         string separator = ":";
         return Text.LoadLinesByKeyValue(pathToCredentials, separator);
     }

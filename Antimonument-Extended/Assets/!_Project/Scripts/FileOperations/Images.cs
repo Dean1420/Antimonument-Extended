@@ -16,10 +16,10 @@ namespace FileOperations{
             byte[] bytes = texture.EncodeToJPG();
 
             // create the directory if it doesn't exist
-            Directory.CreateDirectory(RuntimePaths.Runtime + "/" + relativePath);
+            Directory.CreateDirectory(PersistentDataPaths.Runtime + "/" + relativePath);
 
             string fullPath = Path.Combine(
-                RuntimePaths.Runtime,
+                PersistentDataPaths.Runtime,
                 relativePath,
                 filename
             );

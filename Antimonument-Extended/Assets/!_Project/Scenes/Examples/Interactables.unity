@@ -2663,8 +2663,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LCCRenderer
   m_manager: {fileID: 1484529437}
-  filename: C:\Users\hwb01\Desktop\Antimonument-Extended\Antimonument-Extended\Assets\!_Project\Data\GaussianSplats\Landschaftspark_LCC2\lcc2-result\Landschaftspark2.lcc2
+  filename: Landschaftspark_LCC2/lcc2-result/Landschaftspark2.lcc2
   scale: 1
+  useStreamingAssetsOnAndroid: 0
 --- !u!1001 &1362436415
 PrefabInstance:
   m_ObjectHideFlags: 0

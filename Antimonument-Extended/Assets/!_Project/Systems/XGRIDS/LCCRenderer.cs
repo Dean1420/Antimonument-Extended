@@ -1,47 +1,90 @@
+using System.IO;
 using UnityEngine;
 using LCCCore;
-using System.IO;
-using UnityEngine.UIElements;
+using FileOperations;
+using UnityEngine.Networking;
+using System.Collections;
+
+
 
 public class LCCRenderer : MonoBehaviour
 {
     public LCCManager m_manager;
     public string filename;
+    [SerializeField] private float scale = 1f;
+    [SerializeField] private bool useStreamingAssetsOnAndroid = false;
+
+
     private string m_FilePath;
     private LCCCore.Renderer m_renderer;
-    [SerializeField] private float scale = 1f;
 
     void Start()
     {
-        // reset transform first
-        //transform.localPosition = Vector3.zero;
-        //transform.localRotation = Quaternion.identity;
-        transform.localScale = Vector3.one * scale; // Scale down to 1% size
+        transform.localScale = Vector3.one * scale;
 
-        // build path using Path.Combine for proper separator handling
-        //string relativePath = Path.Combine("!_Project", "Data", "GaussianSplats", filename);
-        //m_FilePath = Path.Combine(Application.dataPath, relativePath);
-        
-        // normalize path separators to forward slashes (Unity/LCC might expect this)
-        //m_FilePath = m_FilePath.Replace('\\', '/');
+        m_FilePath = BuildFilePath();
 
-        m_FilePath = "C:\\Users\\hwb01\\Desktop\\Antimonument-Extended\\Antimonument-Extended\\Assets\\!_Project\\Data\\GaussianSplats\\Landschaftspark_LCC2\\lcc2-result\\Landschaftspark2.lcc2";
+        LogDebugInfo();
 
-        // Comprehensive debugging
-        Debug.Log("=== LCC Loading Debug Info ===");
-        Debug.Log("Application.dataPath: " + Application.dataPath);
-        //Debug.Log("Filename: " + filename);
-        Debug.Log("Full path: " + m_FilePath);
-        Debug.Log("File exists: " + File.Exists(m_FilePath));
-        Debug.Log("File extension: " + Path.GetExtension(m_FilePath));
-        Debug.Log("Directory exists: " + Directory.Exists(Path.GetDirectoryName(m_FilePath)));
-        
         if (!File.Exists(m_FilePath))
         {
-            Debug.LogError("File not found at path: " + m_FilePath);
+            Debug.LogError("LCC_RENDERER >>> File not found: " + m_FilePath);
             return;
         }
 
+        if (useStreamingAssetsOnAndroid)
+        {
+            StartCoroutine(LoadFromStreamingAssetsOnAndroid());
+            return;
+        }
+
+        LoadFile();
+    }
+
+    private string BuildFilePath()
+    {
+        string windowsPath = Path.Combine(StreamingAssetsPaths.GaussianSplats, filename).Replace('/', '\\');
+        string unixPath = Path.Combine(StreamingAssetsPaths.GaussianSplats, filename).Replace('\\', '/');
+
+        if (File.Exists(windowsPath)) return windowsPath;
+        if (File.Exists(unixPath)) return unixPath;
+
+        Debug.LogError("LCC_RENDERER >>> Could not find file on any platform path.");
+        return null;
+    }
+
+    private IEnumerator LoadFromStreamingAssetsOnAndroid()
+    {
+        string src = Path.Combine(Application.streamingAssetsPath, "GaussianSplats", filename);
+
+        using UnityWebRequest req = UnityWebRequest.Get(src);
+        yield return req.SendWebRequest();
+
+        if (req.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("LCC_RENDERER >>> StreamingAssets fetch failed: " + req.error);
+            yield break;
+        }
+
+        m_FilePath = Path.Combine(Application.persistentDataPath, "GaussianSplats", filename);
+        Directory.CreateDirectory(Path.GetDirectoryName(m_FilePath));
+        File.WriteAllBytes(m_FilePath, req.downloadHandler.data);
+
+        LoadFile();
+    }
+
+    private void LogDebugInfo()
+    {
+        Debug.Log("LCC_RENDERER >>> Application.dataPath: " + Application.dataPath);
+        Debug.Log("LCC_RENDERER >>> Filename: " + filename);
+        Debug.Log("LCC_RENDERER >>> Full path: " + m_FilePath);
+        Debug.Log("LCC_RENDERER >>> File exists: " + File.Exists(m_FilePath));
+        Debug.Log("LCC_RENDERER >>> File extension: " + Path.GetExtension(m_FilePath));
+        Debug.Log("LCC_RENDERER >>> Directory exists: " + Directory.Exists(Path.GetDirectoryName(m_FilePath)));
+    }
+
+    private void LoadFile()
+    {
         try
         {
             m_renderer = m_manager.GetRender(this.transform);
@@ -49,38 +92,13 @@ public class LCCRenderer : MonoBehaviour
         }
         catch (System.Exception e)
         {
-            Debug.LogError("Failed to load LCC file: " + e.Message);
-            Debug.LogError("Stack trace: " + e.StackTrace);
-            
-            // try alternative path format (relative from project root)
-            TryAlternativePath();
-        }
-    }
-
-    private void TryAlternativePath()
-    {
-        // try path relative to project root instead of Assets
-        string projectRoot = Directory.GetParent(Application.dataPath).FullName;
-        string altPath = Path.Combine(projectRoot, "Assets", "!_Project", "Data", "GaussianSplats", filename);
-        altPath = altPath.Replace('\\', '/');
-        
-        Debug.Log("Trying alternative path: " + altPath);
-        
-        if (File.Exists(altPath))
-        {
-            try
-            {
-                m_renderer.Load(altPath, PlatformType.PC, onLoadCallback);
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError("Alternative path also failed: " + e.Message);
-            }
+            Debug.LogError("LCC_RENDERER >>> Failed to load: " + e.Message);
+            Debug.LogError("LCC_RENDERER >>> Stack trace: " + e.StackTrace);
         }
     }
 
     private void onLoadCallback()
     {
-        Debug.Log("=== LCC Data loaded successfully! ===");
+        Debug.Log("LCC_RENDERER >>> Loaded successfully!");
     }
 }

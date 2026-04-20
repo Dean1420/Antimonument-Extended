@@ -91,7 +91,7 @@ public class GLBExportFromArea : MonoBehaviour
     private void ExportToGLB(GameObject rootObject)
     {
         string relativePath = "GLBExport/";
-        string fullPath = Path.Combine(RuntimePaths.Runtime, relativePath);
+        string fullPath = Path.Combine(PersistentDataPaths.Runtime, relativePath);
         
         Directory.CreateDirectory(fullPath);
 
