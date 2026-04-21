@@ -118,7 +118,41 @@ public class LCCRenderer : MonoBehaviour
 
     private void onLoadCallback()
     {
-        Debug.Log("LCC_RENDERER >>> Loaded successfully!");
+    Debug.Log("LCC_RENDERER >>> Loaded successfully!");
+    
+    // Check renderer state
+    if (m_renderer != null)
+    {
+        Debug.Log("LCC_RENDERER >>> Renderer exists: true");
+        // Check if it exposes any properties (adjust based on LCCCore API)
+        Debug.Log("LCC_RENDERER >>> Renderer type: " + m_renderer.GetType().Name);
+    }
+    
+    // Check GameObject hierarchy
+    Debug.Log("LCC_RENDERER >>> Transform position: " + transform.position);
+    Debug.Log("LCC_RENDERER >>> Transform scale: " + transform.localScale);
+    Debug.Log("LCC_RENDERER >>> Active: " + gameObject.activeInHierarchy);
+    Debug.Log("LCC_RENDERER >>> Layer: " + LayerMask.LayerToName(gameObject.layer));
+    
+    // Check for child objects (splats often create meshes as children)
+    Debug.Log("LCC_RENDERER >>> Child count: " + transform.childCount);
+    for (int i = 0; i < transform.childCount; i++)
+    {
+        var child = transform.GetChild(i);
+        Debug.Log($"LCC_RENDERER >>> Child {i}: {child.name}, active: {child.gameObject.activeSelf}");
+        
+        var meshRenderer = child.GetComponent<MeshRenderer>();
+        if (meshRenderer != null)
+        {
+            Debug.Log($"LCC_RENDERER >>> Child {i} has MeshRenderer, enabled: {meshRenderer.enabled}");
+            Debug.Log($"LCC_RENDERER >>> Material: {meshRenderer.material?.shader?.name}");
+        }
+    }
+    
+    // Graphics info
+    Debug.Log("LCC_RENDERER >>> Graphics API: " + SystemInfo.graphicsDeviceType);
+    Debug.Log("LCC_RENDERER >>> Compute shaders: " + SystemInfo.supportsComputeShaders);
+
     }
 }
 

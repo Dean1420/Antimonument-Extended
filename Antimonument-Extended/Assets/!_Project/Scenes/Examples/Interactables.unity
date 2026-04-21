@@ -2789,7 +2789,7 @@ MonoBehaviour:
   m_manager: {fileID: 1484529437}
   filename: lcc2/lcc2-result/Landschaftspark2.lcc2
   scale: 1
-  useStreamingAssetsOnAndroid: 0
+  useStreamingAssetsOnAndroid: 1
 --- !u!1001 &1362436415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3289,9 +3289,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 657184242118504722, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1453706504}
-    - targetCorrespondingSourceObject: {fileID: 657184242118504722, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1453706508}
   m_SourcePrefab: {fileID: 100100000, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
 --- !u!4 &1453706500 stripped
 Transform:
@@ -3364,19 +3361,6 @@ MonoBehaviour:
   m_Script: {fileID: -1072878311, guid: d21eb27345099a84990fd1202b687f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LCCSDK.dll::LCCCore.CameraDraw
---- !u!114 &1453706508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453706501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1072878311, guid: 47770d2320935e44b88aa701833d52bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: LCCSDK.dll::LCCCore.CameraDraw
-  LAPBNGHHPDD: {fileID: 0}
 --- !u!1 &1459616812
 GameObject:
   m_ObjectHideFlags: 0
