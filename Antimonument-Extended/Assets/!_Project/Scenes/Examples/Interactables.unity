@@ -2787,7 +2787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LCCRenderer
   m_manager: {fileID: 1484529437}
-  filename: lcc/lcc-result/Virtuelles Studio.lcc
+  filename: lcc2/lcc2-result/Landschaftspark2.lcc2
   scale: 1
   useStreamingAssetsOnAndroid: 0
 --- !u!1001 &1362436415
@@ -3376,6 +3376,7 @@ MonoBehaviour:
   m_Script: {fileID: -1072878311, guid: 47770d2320935e44b88aa701833d52bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LCCSDK.dll::LCCCore.CameraDraw
+  LAPBNGHHPDD: {fileID: 0}
 --- !u!1 &1459616812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,7 +3545,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1484529435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1307996880, guid: 47770d2320935e44b88aa701833d52bc, type: 3}
+  m_Script: {fileID: -1307996880, guid: d21eb27345099a84990fd1202b687f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LCCSDK.dll::LCCCore.LCCManager
   m_AppKey: 
