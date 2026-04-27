@@ -119,38 +119,45 @@ public class PhotoHandler : MonoBehaviour
         cameraFlash.SetActive(true);
         yield return new WaitForSeconds(flashTime);
         cameraFlash.SetActive(false);
-    }
+    } 
+
+
 
     void UploadPolaroid()
-    {       
-        Debug.Log(PersistentDataPaths.Runtime);
-        Images.SaveTextureAsJpg(currentImage, "Polaroid/", "Test.jpg");
-        
-        // Commented out because the credentials are not updated yet
-        byte[] currentImageJpg = currentImage.EncodeToJPG();
-        string fileType = ".jpg";
+{       
+    byte[] currentImageJpg = currentImage.EncodeToJPG();
+    string fileType = ".jpg";
+    string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm.ss");
+    string filename = "polaroid_";
+    
+    string polaroidFolder = Path.Combine(PersistentDataPaths.Runtime, "Polaroid");
+    string fullPath = Path.Combine(polaroidFolder, timestamp + filename + fileType);
+    
+    Debug.Log($"POLAROID >>> Saving to: {fullPath}");
+    
+    Directory.CreateDirectory(polaroidFolder);
+    File.WriteAllBytes(fullPath, currentImageJpg);
+    
+    Debug.Log($"POLAROID >>> Successfully saved");
+    
+    
+    Dictionary<string, string> credentials = LoadCredentials();
 
-        Dictionary<string, string> credentials = LoadCredentials();
-
-        string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm");
-        string filename = "file_";
-        Ftp.FtpHandler.uploadFile(
-            credentials["username"],
-            credentials["username"],
-            credentials["url"],
-            credentials["remoteDirectory"],
-            timestamp + filename + fileType,
-            currentImageJpg);
-
-    }
-
-
+    // FTP upload
+    Ftp.FtpHandler.uploadFile(
+        credentials["username"],
+        credentials["password"],
+        credentials["url"],
+        credentials["remoteDirectory"],
+        timestamp + filename + fileType,
+        currentImageJpg);
+}
 
     private Dictionary<string, string> LoadCredentials()
-    {
-        string pathToCredentials =  Application.dataPath + "/" + "StreamingAssets/Data/Credentials/Secrets/FTP.txt";
-        string separator = ":";
-        return Text.LoadLinesByKeyValue(pathToCredentials, separator);
-    }
+{
+    string pathToCredentials = Path.Combine(StreamingAssetsPaths.Credentials, "Secrets", "FTP.txt");
+    string separator = ":";
+    return Text.LoadLinesByKeyValue(pathToCredentials, separator);
+}
 
 }

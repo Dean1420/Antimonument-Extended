@@ -2671,7 +2671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1308804603
 Transform:
   m_ObjectHideFlags: 0
@@ -2789,7 +2789,7 @@ MonoBehaviour:
   m_manager: {fileID: 1484529437}
   filename: lcc2/lcc2-result/Landschaftspark2.lcc2
   scale: 1
-  useStreamingAssetsOnAndroid: 1
+  useStreamingAssetsOnAndroid: 0
 --- !u!1001 &1362436415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3407,7 +3407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1465241823
 Transform:
   m_ObjectHideFlags: 0
@@ -3572,6 +3572,63 @@ Transform:
   - {fileID: 814005171}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1538499044
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.34282294
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3566359
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4675108
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: m_Name
+      value: untitled
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
 --- !u!1 &1543624050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,3 +5266,4 @@ SceneRoots:
   - {fileID: 1939742544}
   - {fileID: 1465241823}
   - {fileID: 1886962035}
+  - {fileID: 1538499044}
