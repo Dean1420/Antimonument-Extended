@@ -639,7 +639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &298432005
 Transform:
   m_ObjectHideFlags: 0
@@ -2671,7 +2671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1308804603
 Transform:
   m_ObjectHideFlags: 0
@@ -3213,6 +3213,7 @@ MonoBehaviour:
   velocityEstimator: {fileID: 1626713889}
   crossSectionMaterial: {fileID: 2100000, guid: a7964b84f8181a90fadb9119fb985c7f, type: 2}
   cutForce: 200
+  sliceSound: {fileID: 0}
 --- !u!4 &1445900158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3452723400377775902, guid: 4609530dde54094b19327426f0b74370, type: 3}

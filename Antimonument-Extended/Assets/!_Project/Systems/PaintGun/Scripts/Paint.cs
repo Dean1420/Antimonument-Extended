@@ -10,6 +10,8 @@ public class Paint : MonoBehaviour
     [SerializeField] private float radius = 10;
     [SerializeField, Range(0f, 1f)] private float opacity = 1f;
     [SerializeField, Range(0.01f, 1f)] private float falloffRange = 1f;
+    [SerializeField] private AudioSource paintSound;
+
 
     [Header("Paint Control")]
     // the particle system dictates the direction of the raycast
@@ -64,6 +66,7 @@ public class Paint : MonoBehaviour
 
         if (isPaintable())
         {
+            if(paintSound != null){paintSound.Play();}
             ApplyPaint();
         }
         else if (raycastHit.collider.gameObject.name == colourpicker.name)

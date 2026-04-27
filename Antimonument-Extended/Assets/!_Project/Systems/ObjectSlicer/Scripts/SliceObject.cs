@@ -2,6 +2,7 @@ using UnityEngine;
 using EzySlice;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class SliceObject : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class SliceObject : MonoBehaviour
     [Header("Slicing Parameters")]
     [SerializeField] private Material crossSectionMaterial;
     [SerializeField] public float cutForce = 2000;
+
+    [Header("Effects")]
+    [SerializeField] private AudioSource sliceSound;
+
 
     // Lists to track objects
     private List<GameObject> originalObjects = new List<GameObject>();
@@ -84,6 +89,9 @@ public class SliceObject : MonoBehaviour
         slicedObjects.Add(lowerHull);
         
         HandleObjectCleanup(target);
+
+        if(sliceSound != null){sliceSound.Play();}
+
     }
 }
 
@@ -114,6 +122,10 @@ public void SetupSlicedComponent(GameObject slicedObject, int layer)
     MeshCollider collider = slicedObject.AddComponent<MeshCollider>();
     collider.convex = true;
     rb.AddExplosionForce(cutForce, slicedObject.transform.position, 1);
+
+    // Add XR Grab Interactable
+    XRGrabInteractable grabInteractable = slicedObject.AddComponent<XRGrabInteractable>();
+    grabInteractable.useDynamicAttach = true;
 }
 
 
