@@ -179,7 +179,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5f00f03666b47b8f888c3b9ae40a72fc, type: 2}
     - target: {fileID: 919132149155446097, guid: a6b8dc0b8b8f096fd98d849d9fcd0164, type: 3}
       propertyPath: m_Name
-      value: Sword
+      value: ObjectSlicer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -306,10 +306,34 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3964158246481209425}
+        m_TargetAssemblyTypeName: SliceObject, Assembly-CSharp
+        m_MethodName: MakeSlicesCutable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_LastSelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3964158246481209425}
+        m_TargetAssemblyTypeName: SliceObject, Assembly-CSharp
+        m_MethodName: MakeSlicesGrabbable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -337,6 +361,8 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_AttachTransform: {fileID: 5825764699479254241}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
@@ -412,3 +438,4 @@ MonoBehaviour:
   velocityEstimator: {fileID: 178079879290361466}
   crossSectionMaterial: {fileID: 2100000, guid: a7964b84f8181a90fadb9119fb985c7f, type: 2}
   cutForce: 200
+  sliceSound: {fileID: 0}

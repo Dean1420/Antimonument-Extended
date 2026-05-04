@@ -151,4 +151,21 @@ public void SetupSlicedComponent(GameObject slicedObject, int layer)
             }
         }
     }
+
+public void MakeSlicesCutable()
+    {
+        foreach (GameObject slicedObject in slicedObjects)
+        {
+            slicedObject.layer = sliceableLayer;     
+        }
+    }
+
+public void MakeSlicesGrabbable()
+    {
+        foreach (GameObject slicedObject in slicedObjects)
+        {
+        // set to "Default" layer (layer 0)
+        slicedObject.layer = 0;         
+        }
+    }
 }
