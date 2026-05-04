@@ -17,7 +17,7 @@ public class SliceObject : MonoBehaviour
     [SerializeField] public float cutForce = 2000;
 
     [Header("Effects")]
-    [SerializeField] private AudioSource sliceSound;
+    [SerializeField] private AudioClip sliceSound;
 
 
     // Lists to track objects
@@ -25,12 +25,35 @@ public class SliceObject : MonoBehaviour
     private List<GameObject> slicedObjects = new List<GameObject>();
 
 
+ // Store the actual layer number (not the mask)
+    private int sliceableLayerNumber;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Extract the layer number from the LayerMask
+        sliceableLayerNumber = LayerMaskToLayer(sliceableLayer);
         CollectSliceableObjects();
     }
+
+
+
+// Convert LayerMask to actual layer number
+private int LayerMaskToLayer(LayerMask layerMask)
+{
+    int layerNumber = 0;
+    int layer = layerMask.value;
+    
+    while (layer > 1)
+    {
+        layer = layer >> 1;
+        layerNumber++;
+    }
+    
+    return layerNumber;
+}
 
 
 
@@ -81,16 +104,16 @@ public class SliceObject : MonoBehaviour
     if(hull != null)
     {
         GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
-        SetupSlicedComponent(upperHull, target.layer);
+        SetupSlicedComponent(upperHull, sliceableLayerNumber);
         slicedObjects.Add(upperHull);
         
         GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
-        SetupSlicedComponent(lowerHull, target.layer);
+        SetupSlicedComponent(lowerHull, sliceableLayerNumber);
         slicedObjects.Add(lowerHull);
         
         HandleObjectCleanup(target);
 
-        if(sliceSound != null){sliceSound.Play();}
+        if(sliceSound != null){AudioSource.PlayClipAtPoint(sliceSound, transform.position);}
 
     }
 }
@@ -156,7 +179,7 @@ public void MakeSlicesCutable()
     {
         foreach (GameObject slicedObject in slicedObjects)
         {
-            slicedObject.layer = sliceableLayer;     
+            slicedObject.layer = sliceableLayerNumber;     
         }
     }
 
