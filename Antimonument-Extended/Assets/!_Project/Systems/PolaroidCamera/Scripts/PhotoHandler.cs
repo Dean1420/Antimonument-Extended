@@ -124,7 +124,7 @@ public class PhotoHandler : MonoBehaviour
 
 
     void UploadPolaroid()
-{       
+{
     byte[] currentImageJpg = currentImage.EncodeToJPG();
     string fileType = ".jpg";
     string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm.ss");
@@ -133,24 +133,25 @@ public class PhotoHandler : MonoBehaviour
     string polaroidFolder = Path.Combine(PersistentDataPaths.Runtime, "Polaroid");
     string fullPath = Path.Combine(polaroidFolder, timestamp + filename + fileType);
     
-    Debug.Log($"POLAROID >>> Saving to: {fullPath}");
-    
     Directory.CreateDirectory(polaroidFolder);
     File.WriteAllBytes(fullPath, currentImageJpg);
-    
     Debug.Log($"POLAROID >>> Successfully saved");
     
-    
-    Dictionary<string, string> credentials = LoadCredentials();
-
-    // FTP upload
-    Ftp.FtpHandler.uploadFile(
-        credentials["username"],
-        credentials["password"],
-        credentials["url"],
-        credentials["remoteDirectory"],
-        timestamp + filename + fileType,
-        currentImageJpg);
+    try
+    {
+        Dictionary<string, string> credentials = LoadCredentials();
+        Ftp.FtpHandler.uploadFile(
+            credentials["username"],
+            credentials["password"],
+            credentials["url"],
+            credentials["remoteDirectory"],
+            timestamp + filename + fileType,
+            currentImageJpg);
+    }
+    catch (Exception e)
+    {
+        Debug.LogWarning($"POLAROID >>> FTP upload failed: {e.Message}");
+    }
 }
 
     private Dictionary<string, string> LoadCredentials()

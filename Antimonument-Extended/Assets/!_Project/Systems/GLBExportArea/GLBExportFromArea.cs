@@ -21,10 +21,20 @@ public class GLBExportFromArea : MonoBehaviour
         }
     }
 
+    private void Awake()
+{
+    if (boundingBox == null)
+    {
+        boundingBox = this.transform;
+        Debug.Log("GLB >>> Bounding box set to self in Awake");
+    }
+}
+
     public void Export()
     {
+        Debug.Log("GLB >>> Export() called!");
         if (!ValidateBoundingBox()) return;
-
+       
         List<ObjectParentPair> objectsToExport = FindObjectsInBoundingBox();
         
         if (objectsToExport.Count == 0)
@@ -43,37 +53,41 @@ public class GLBExportFromArea : MonoBehaviour
         CleanupTemporaryParent(tempRoot);
     }
 
-    private bool ValidateBoundingBox()
+ private bool ValidateBoundingBox()
+{
+    Debug.Log($"GLB >>> BoundingBox is: {(boundingBox == null ? "NULL" : boundingBox.name)}");
+    if (boundingBox == null)
     {
-        if (boundingBox == null)
-        {
-            Debug.LogError("GLB >>> Bounding box not assigned!");
-            return false;
-        }
-        return true;
+        boundingBox = this.transform;
+        Debug.Log("GLB >>> Forced bounding box to self!");
     }
+    return true;
+}
 
-    private List<ObjectParentPair> FindObjectsInBoundingBox()
+   private List<ObjectParentPair> FindObjectsInBoundingBox()
+{
+    Vector3 halfExtents = boundingBox.lossyScale * 0.5f;
+    Debug.Log($"GLB >>> Searching at position: {boundingBox.position}, halfExtents: {halfExtents}");
+    
+    Collider[] hitColliders = Physics.OverlapBox(
+        boundingBox.position,
+        halfExtents,
+        boundingBox.rotation
+    );
+    
+    Debug.Log($"GLB >>> OverlapBox found: {hitColliders.Length} colliders");
+    
+    List<ObjectParentPair> objects = new List<ObjectParentPair>();
+    foreach (Collider col in hitColliders)
     {
-        Vector3 halfExtents = boundingBox.lossyScale * 0.5f;
-        Collider[] hitColliders = Physics.OverlapBox(
-            boundingBox.position,
-            halfExtents,
-            boundingBox.rotation
-        );
-
-        List<ObjectParentPair> objects = new List<ObjectParentPair>();
-        
-        foreach (Collider col in hitColliders)
+        Debug.Log($"GLB >>> Found collider on: {col.gameObject.name}");
+        if (col.transform != boundingBox)
         {
-            if (col.transform != boundingBox)
-            {
-                objects.Add(new ObjectParentPair(col.transform, col.transform.parent));
-            }
+            objects.Add(new ObjectParentPair(col.transform, col.transform.parent));
         }
-
-        return objects;
     }
+    return objects;
+}
 
     private GameObject CreateTemporaryParent()
     {
@@ -99,8 +113,8 @@ public class GLBExportFromArea : MonoBehaviour
             new Transform[] { rootObject.transform },
             new ExportContext()
         );
-        
-        exporter.SaveGLB(fullPath, "export_area");
+        string timestamp = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
+        exporter.SaveGLB(fullPath, "export_area_" + timestamp);
         
         Debug.Log("GLB >>> Exported to: " + fullPath + "/export_area.glb");
     }
@@ -115,6 +129,6 @@ public class GLBExportFromArea : MonoBehaviour
 
     private void CleanupTemporaryParent(GameObject tempParent)
     {
-        DestroyImmediate(tempParent);
+        Destroy(tempParent);
     }
 }
