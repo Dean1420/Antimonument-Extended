@@ -33,7 +33,7 @@ public class AnnotationDebugMenu : MonoBehaviour
         debugText.fontSize = 24;
         debugText.color = Color.white;
         RectTransform rt = textObj.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(400, 300);
+        rt.sizeDelta = new Vector2(400, 400);
         rt.localPosition = Vector3.zero;
         rt.localScale = Vector3.one;
         rt.anchorMin = Vector2.zero;

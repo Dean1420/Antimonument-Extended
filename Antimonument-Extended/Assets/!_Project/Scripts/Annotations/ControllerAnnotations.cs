@@ -10,6 +10,7 @@ public class ControllerAnnotation : MonoBehaviour
     public TextMeshProUGUI labelText;
     public LineRenderer lineRenderer;
 
+
     [Header("Einstellungen")]
     public string actionName = "Teleport";
 
@@ -26,10 +27,7 @@ public class ControllerAnnotation : MonoBehaviour
         if (!isVisible) return;
 
         lineRenderer.SetPosition(0, buttonAnchor.position);
-        // Linie endet früher
-        Vector3 direction = (labelTarget.position - buttonAnchor.position).normalized;
-        lineRenderer.SetPosition(1, labelTarget.position - direction * 0.05f);
-
+        lineRenderer.SetPosition(1, labelTarget.position);
         // Label immer zur Kamera drehen
         labelTarget.LookAt(Camera.main.transform);
         labelTarget.Rotate(0, 180f, 0);

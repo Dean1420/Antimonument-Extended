@@ -5,9 +5,11 @@ using System.IO;
 using System.Collections.Generic;
 using FileOperations;
 
+
 public class GLBExportFromArea : MonoBehaviour
 {
     [SerializeField] private Transform boundingBox;
+    [SerializeField] private Transform excludeRoot;
 
     private class ObjectParentPair
     {
@@ -78,17 +80,17 @@ public class GLBExportFromArea : MonoBehaviour
     Debug.Log($"GLB >>> OverlapBox found: {hitColliders.Length} colliders");
     
     List<ObjectParentPair> objects = new List<ObjectParentPair>();
-    foreach (Collider col in hitColliders)
+    
+ foreach (Collider col in hitColliders)
+{
+    if (col.transform != boundingBox && 
+        !col.transform.IsChildOf(excludeRoot))
     {
-        Debug.Log($"GLB >>> Found collider on: {col.gameObject.name}");
-        if (col.transform != boundingBox)
-        {
-            objects.Add(new ObjectParentPair(col.transform, col.transform.parent));
-        }
+        objects.Add(new ObjectParentPair(col.transform, col.transform.parent));
     }
-    return objects;
 }
-
+return objects;
+}
     private GameObject CreateTemporaryParent()
     {
         return new GameObject("TempExportRoot");
