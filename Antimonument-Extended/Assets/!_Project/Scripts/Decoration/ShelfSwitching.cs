@@ -8,13 +8,15 @@ public class ShelfSwitching : MonoBehaviour
     public Transform[] Decos;
     public BoxCollider closetCollider;
 
-    public List<Transform>[] decoChildren = new List<Transform>[3];
+    public List<Transform>[] decoChildren;
 
     public int curDecoNum;
 
     void Start()
     {
         //init list
+        decoChildren = new List<Transform>[Decos.Length];
+
         for (int i = 0; i < decoChildren.Length; i++)
         {
             decoChildren[i] = new List<Transform>();
