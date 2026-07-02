@@ -14,6 +14,7 @@ public class GLBExportFromArea : MonoBehaviour
 {
     [SerializeField] private Transform boundingBox;
     [SerializeField] private Transform excludeRoot;
+    
 
     private class ObjectParentPair
     {
@@ -35,33 +36,52 @@ public class GLBExportFromArea : MonoBehaviour
         }
     }
 
-    public void Export()
+private string GetStatueName(List<ObjectParentPair> objects)
+{
+    foreach (var pair in objects)
     {
-        Debug.Log("GLB >>> Export() called!");
-        if (!ValidateBoundingBox()) return;
-
-        List<ObjectParentPair> objectsToExport = FindObjectsInBoundingBox();
-
-        if (objectsToExport.Count == 0)
+        if (pair.obj.CompareTag("Statue"))
         {
-            Debug.LogWarning("GLB >>> No objects found in bounding box!");
-            return;
-        }
-        GameObject tempRoot = CreateTemporaryParent();
-        ReparentObjects(objectsToExport, tempRoot.transform);
-
-        Debug.Log($"GLB >>> Exporting {objectsToExport.Count} objects");
-
-        string glbFullPath = ExportToGLB(tempRoot);
-
-        RestoreOriginalParents(objectsToExport);
-        CleanupTemporaryParent(tempRoot);
-
-        if (!string.IsNullOrEmpty(glbFullPath))
-        {
-            StartCoroutine(WaitAndUploadGLB(glbFullPath));
+            return pair.obj.name;
         }
     }
+
+    Debug.LogWarning("GLB >>> No object with tag 'Statue' found, falling back to default name");
+    return "export_area";
+}
+
+public void Export()
+{
+    Debug.Log("GLB >>> Export() called!");
+    if (!ValidateBoundingBox()) return;
+
+    List<ObjectParentPair> objectsToExport = FindObjectsInBoundingBox();
+
+    if (objectsToExport.Count == 0)
+    {
+        Debug.LogWarning("GLB >>> No objects found in bounding box!");
+        return;
+    }
+
+    string statueName = GetStatueName(objectsToExport);
+
+    GameObject tempRoot = CreateTemporaryParent(statueName);
+    ReparentObjects(objectsToExport, tempRoot.transform);
+
+    Debug.Log($"GLB >>> Exporting {objectsToExport.Count} objects");
+
+    string glbFullPath = ExportToGLB(tempRoot);
+
+    RestoreOriginalParents(objectsToExport);
+    CleanupTemporaryParent(tempRoot);
+
+    if (!string.IsNullOrEmpty(glbFullPath))
+    {
+        StartCoroutine(WaitAndUploadGLB(glbFullPath));
+    }
+}
+
+
 
     private bool ValidateBoundingBox()
     {
@@ -100,10 +120,10 @@ public class GLBExportFromArea : MonoBehaviour
         return objects;
     }
 
-    private GameObject CreateTemporaryParent()
-    {
-        return new GameObject("TempExportRoot");
-    }
+   private GameObject CreateTemporaryParent(string name)
+{
+    return new GameObject(name);
+}
 
     private void ReparentObjects(List<ObjectParentPair> objects, Transform newParent)
     {
@@ -114,24 +134,23 @@ public class GLBExportFromArea : MonoBehaviour
     }
 
     // Gibt den vollen Pfad zur erzeugten .glb zurück (oder null bei Fehler)
-    private string ExportToGLB(GameObject rootObject)
-    {
-        string fullPath = Path.Combine(PersistentDataPaths.Runtime, "Polaroid");
+   private string ExportToGLB(GameObject rootObject)
+{
+    string fullPath = Path.Combine(PersistentDataPaths.Runtime, "Polaroid");
+    Directory.CreateDirectory(fullPath);
+    GLTFSceneExporter exporter = new GLTFSceneExporter(
+        new Transform[] { rootObject.transform },
+        new ExportContext()
+    );
+    string timestamp = System.DateTime.Now.ToString("yyyy.MM.dd_HH.mm");
+    string filename = "file_" + rootObject.name + "_" + timestamp;
+    exporter.SaveGLB(fullPath, filename);
 
-        Directory.CreateDirectory(fullPath);
-        GLTFSceneExporter exporter = new GLTFSceneExporter(
-            new Transform[] { rootObject.transform },
-            new ExportContext()
-        );
-        string timestamp = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
-        string filename = "export_area_" + timestamp;
-        exporter.SaveGLB(fullPath, filename);
+    string glbFullPath = Path.Combine(fullPath, filename + ".glb");
+    Debug.Log("GLB >>> Exported to: " + glbFullPath);
 
-        string glbFullPath = Path.Combine(fullPath, filename + ".glb");
-        Debug.Log("GLB >>> Exported to: " + glbFullPath);
-
-        return glbFullPath;
-    }
+    return glbFullPath;
+}
 
     private void RestoreOriginalParents(List<ObjectParentPair> objects)
     {

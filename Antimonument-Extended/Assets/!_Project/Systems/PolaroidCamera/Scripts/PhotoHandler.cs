@@ -123,10 +123,11 @@ public class PhotoHandler : MonoBehaviour
 void UploadPolaroid()
 {
     byte[] currentImageJpg = currentImage.EncodeToJPG();
-    string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm.ss");
-    string filename = timestamp + "polaroid_" + ".jpg";
+    string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm");
+    string filename = "file_" + timestamp + ".jpg";
     StartCoroutine(WaitAndUpload(currentImageJpg, filename));
 }
+
 
 private IEnumerator WaitAndUpload(byte[] imageData, string filename)
 {
