@@ -5,15 +5,16 @@ TagManager:
   serializedVersion: 3
   tags:
   - Interactable
+  - Statue
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Clicker
   - Water
   - UI
   - Sliceable
-  - 
+  - ClickerFinger
   - 
   - 
   - 

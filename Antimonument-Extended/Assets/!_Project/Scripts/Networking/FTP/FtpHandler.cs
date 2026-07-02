@@ -7,48 +7,58 @@ using System.IO;
 using System.Net;
 using UnityEngine;
 using FileOperations;
+using System.Threading.Tasks;
 namespace Ftp
 {
-    public static class FtpHandler
+        public static class FtpHandler{
+
+  public static async Task UploadFile(
+    string username,
+    string password,
+    string url,
+    string remoteDirectory,
+    string fileName,
+    byte[] fileData)
+{
+    try
     {
-        public static async void uploadFile(string username, string password, string url, string remoteDirectory, string filenName, byte[] fileData)
+        if (fileData == null || fileData.Length == 0)
         {
-            try
-            {
-                // create ftp-request
-                string path = url + "/" + remoteDirectory + "/" + Path.GetFileName(filenName);
+            Debug.LogError("FTP >>> fileData is null or empty");
+            return;
+        }
 
-                FtpWebRequest request = (FtpWebRequest)WebRequest.Create(path);
+        string path =
+            $"{url.TrimEnd('/')}/{remoteDirectory.Trim('/')}/{Path.GetFileName(fileName)}";
 
-                request.Method = WebRequestMethods.Ftp.UploadFile;
+        Debug.Log("FTP PATH = " + path);
 
-                // create ftp credential
-                NetworkCredential credentials = new NetworkCredential(username, password);
-                request.Credentials = credentials;
+        var request = (FtpWebRequest)WebRequest.Create(path);
+        request.Method = WebRequestMethods.Ftp.UploadFile;
 
-                // ftp flags
-                request.EnableSsl = true;
-                request.UsePassive = true;
-                request.UseBinary = true;
-                request.KeepAlive = false;
+        request.Credentials = new NetworkCredential(username, password);
 
-                // upload data
-                using (Stream ftpStream = request.GetRequestStream())
-                {
-                    await ftpStream.WriteAsync(fileData, 0, fileData.Length);
-                    Debug.Log("FTP >>> bytes written: " + fileData.Length);
-                }
+        request.UsePassive = true;
+        request.UseBinary = true;
+        request.KeepAlive = false;
 
-                // server response
-                using (FtpWebResponse response = (FtpWebResponse)request.GetResponse())
-                {
-                    Debug.Log("FTP >>> server response: " + response.StatusDescription);
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.Log("FTP >>> error: " + e.Message);
-            }
+        request.EnableSsl = true; // nur wenn FTPS wirklich aktiv ist
+
+        using (Stream stream = await request.GetRequestStreamAsync())
+        {
+            await stream.WriteAsync(fileData, 0, fileData.Length);
+        }
+
+        using (FtpWebResponse response =
+               (FtpWebResponse)await request.GetResponseAsync())
+        {
+            Debug.Log("FTP >>> server response: " + response.StatusDescription);
         }
     }
+    catch (Exception e)
+    {
+        Debug.LogError("FTP >>> error: " + e);
+    }
+}
+}
 }
