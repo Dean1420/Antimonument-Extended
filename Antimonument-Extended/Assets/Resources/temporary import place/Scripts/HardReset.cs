@@ -124,7 +124,7 @@ public class HardReset : MonoBehaviour
                 }
             } else
             {
-                Assets[i].transform.position = AssetsTrans[i].position;
+                Assets[i].transform.localPosition = AssetsTrans[i].localPosition;
                 Assets[i].transform.eulerAngles = AssetsTrans[i].eulerAngles;
             }
         }
