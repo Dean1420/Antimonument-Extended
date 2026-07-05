@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 433857138482849771}
   - component: {fileID: 1026148741855888395}
   - component: {fileID: 8083594980348396505}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: Jungling_Large
   m_TagString: Paintable
   m_Icon: {fileID: 0}

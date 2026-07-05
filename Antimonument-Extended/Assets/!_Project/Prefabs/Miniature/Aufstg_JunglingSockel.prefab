@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7128939114941793222}
   - component: {fileID: 282172682493846435}
   - component: {fileID: 4448795706284480725}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Aufstg_JunglingSockel
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -155,8 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b7ae8023492734baf9bad59340deea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatueValues: {fileID: 0}
-  IsGrabbable: 0
+  StatueValues: {fileID: 11400000, guid: b058ee44a4967784d91947c52f225dc3, type: 2}
+  IsGrabbable: 1
 --- !u!114 &4448795706284480725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_ParentInteractableObject: {fileID: 0}
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 4238238107117166452}
   - component: {fileID: 7939333566623302852}
   - component: {fileID: 5543946314552016537}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

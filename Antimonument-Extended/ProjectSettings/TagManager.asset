@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactable
   - Statue
+  - Garbage
+  - Paintable
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - Sliceable
   - ClickerFinger
-  - 
-  - 
+  - DefaultPicture
+  - SliceablePicture
   - 
   - 
   - 

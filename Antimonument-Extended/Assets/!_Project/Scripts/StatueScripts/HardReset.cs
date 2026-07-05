@@ -29,9 +29,11 @@ public class HardReset : MonoBehaviour
     public ReflectionProbe Probe;
     //[SerializeField] TexturePainter TexPaint;
 
+    public SliceObject sliceObject;
 
 
-    
+
+
 
     void OnTriggerEnter(Collider col)
     {
@@ -66,6 +68,7 @@ public class HardReset : MonoBehaviour
         ResetFlowers();
         ResetAssets();
         DeleteShields();
+        sliceObject.ResetCuts();
     }
 
 

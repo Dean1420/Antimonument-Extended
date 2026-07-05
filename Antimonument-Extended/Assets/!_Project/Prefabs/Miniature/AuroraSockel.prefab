@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1101290863659409179}
   - component: {fileID: 8195304573539357978}
   - component: {fileID: 6012470884941060304}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: AuroraSockel
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -108,8 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b7ae8023492734baf9bad59340deea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatueValues: {fileID: 0}
-  IsGrabbable: 0
+  StatueValues: {fileID: 11400000, guid: 9c81237f38e6d9e40860b866455c7875, type: 2}
+  IsGrabbable: 1
 --- !u!54 &1951448751870631679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733855994650199666}
   - component: {fileID: 5152357227979426389}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

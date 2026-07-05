@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2282833547176286323}
   - component: {fileID: 7043985912654015450}
   - component: {fileID: 1441252353672820459}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LoeweSockel
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b7ae8023492734baf9bad59340deea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatueValues: {fileID: 0}
+  StatueValues: {fileID: 11400000, guid: db6da4716e4d2154c821578301b50ada, type: 2}
   IsGrabbable: 1
 --- !u!33 &6491537757442975236
 MeshFilter:
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_ParentInteractableObject: {fileID: 0}
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1

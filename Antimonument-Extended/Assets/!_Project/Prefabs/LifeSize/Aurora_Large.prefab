@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -3041581876770013626}
   - component: {fileID: 6727551372169938991}
   - component: {fileID: 4574559446113749348}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: Aurora_Large
   m_TagString: Paintable
   m_Icon: {fileID: 0}

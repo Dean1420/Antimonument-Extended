@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4020886662472333623}
   - component: {fileID: 5006945929390336505}
   - component: {fileID: -157464329529495548}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: Loewe_Large
   m_TagString: Paintable
   m_Icon: {fileID: 0}

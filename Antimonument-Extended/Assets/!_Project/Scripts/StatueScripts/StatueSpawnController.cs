@@ -20,6 +20,7 @@ public class StatueSpawnController : MonoBehaviour
     public Socket SocketPrefab;
     public Transform SocketParentTransform;
     public HardReset AddOnController;
+    public SliceObject sliceController;
     
     private StatueValues _currentStatue;
     private List<Statue> _statueInstances = new List<Statue>();
@@ -46,7 +47,7 @@ public class StatueSpawnController : MonoBehaviour
             var socket = Instantiate(SocketPrefab,SocketParentTransform);
             socket.transform.localPosition = Vector3.zero;
             socket.transform.localRotation = Quaternion.Euler(-90,0,0);
-            socket.transform.localPosition = Vector3.right * index;
+            socket.transform.localPosition = Vector3.right / 2 * index;
             socket.Init(statue);
             _sockets.Add(socket);
 
@@ -68,7 +69,9 @@ public class StatueSpawnController : MonoBehaviour
             {
                 index *= -1;
             }
+            sliceController.addOriginalStatue(lifeSizeStatue);
         }
+        
     }
     void OnTriggerEnter(Collider col)
     {

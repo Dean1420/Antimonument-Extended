@@ -12,6 +12,6 @@ public class Statue : MonoBehaviour
     void Start()
     {
         if (GetComponent<XRGrabInteractable>() != null)
-            IsGrabbable = false;
+            IsGrabbable = true;
     }
 }

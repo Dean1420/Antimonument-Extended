@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 569358216149584369}
   - component: {fileID: 6673999227693777100}
   - component: {fileID: -5291245352132463630}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: Schnecke_Large
   m_TagString: Paintable
   m_Icon: {fileID: 0}
