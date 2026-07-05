@@ -19,6 +19,8 @@ public class SliceObject : MonoBehaviour
     [Header("Effects")]
     [SerializeField] private AudioClip sliceSound;
 
+    [Header("Paintable Setup")]
+    [SerializeField] private string paintableTag = "Paintable";
 
     // Lists to track objects
     private List<GameObject> originalObjects = new List<GameObject>();
@@ -27,7 +29,7 @@ public class SliceObject : MonoBehaviour
 
  // Store the actual layer number (not the mask)
     private int sliceableLayerNumber;
-
+    private Paint paintGunReference; 
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,6 +38,7 @@ public class SliceObject : MonoBehaviour
         // Extract the layer number from the LayerMask
         sliceableLayerNumber = LayerMaskToLayer(sliceableLayer);
         CollectSliceableObjects();
+        paintGunReference = FindObjectOfType<Paint>();
     }
 
 
@@ -140,7 +143,8 @@ private int LayerMaskToLayer(LayerMask layerMask)
 public void SetupSlicedComponent(GameObject slicedObject, int layer)
 {
     slicedObject.layer = layer;
-    
+    slicedObject.tag = paintableTag;
+
     Rigidbody rb = slicedObject.AddComponent<Rigidbody>();
     MeshCollider collider = slicedObject.AddComponent<MeshCollider>();
     collider.convex = true;

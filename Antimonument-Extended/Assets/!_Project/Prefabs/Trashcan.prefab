@@ -202,6 +202,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  AssetsPrefab: []
   Probe: {fileID: 0}
 --- !u!65 &4320853605696489784
 BoxCollider:

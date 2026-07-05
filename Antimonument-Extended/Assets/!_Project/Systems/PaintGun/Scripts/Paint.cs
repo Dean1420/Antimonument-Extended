@@ -18,11 +18,11 @@ public class Paint : MonoBehaviour
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private float paintDistance = 100;
     [SerializeField] private Transform[] paintableObjects;
+    [SerializeField] private string paintableTag = "Paintable";  // NEU: Tag-Name konfigurierbar
     
     [Header("Colour Picker")]
     [SerializeField] private Transform colourpicker;
     [SerializeField] private Material paintCanister;
-
 
     // caching of copied textures for resets and efficiency
     private Dictionary<GameObject, Texture2D> cachedTextures = new Dictionary<GameObject, Texture2D>();
@@ -221,9 +221,16 @@ public class Paint : MonoBehaviour
             return false;
         }
 
+        // PRIMÄR: Tag-Prüfung (für dynamische Objekte wie Schnittteile)
+        if (hitObject.CompareTag(paintableTag))
+        {
+            return true;
+        }
+
+        // FALLBACK: Liste-Prüfung (für im Inspector eingetragene Objekte)
         foreach (Transform paintableObject in paintableObjects)
         {
-            if (paintableObject.gameObject == hitObject)
+            if (paintableObject != null && paintableObject.gameObject == hitObject)
             {
                 return true;
             }
@@ -272,23 +279,35 @@ public class Paint : MonoBehaviour
     }
 
     // Fix the CacheOriginalTextures method - add a check before adding to dictionary
-private void CacheOriginalTextures()
-{
-    foreach (Transform paintableObject in paintableObjects)
+    private void CacheOriginalTextures()
     {
-        if (paintableObject == null) continue;
+        foreach (Transform paintableObject in paintableObjects)
+        {
+            if (paintableObject == null) continue;
 
-        GameObject obj = paintableObject.gameObject;
-        
-        // ADDED: Skip if already cached (prevents duplicates)
+            GameObject obj = paintableObject.gameObject;
+            
+            if (originalTextures.ContainsKey(obj))
+            {
+                Debug.LogWarning($"PAINT_GUN >>> {obj.name} is duplicated in paintableObjects array, skipping...");
+                continue;
+            }
+
+            CacheTextureForObject(obj);
+        }
+    }
+
+    public void CacheTextureForObject(GameObject obj)
+    {
+        if (obj == null) return;
+
         if (originalTextures.ContainsKey(obj))
         {
-            Debug.LogWarning($"PAINT_GUN >>> {obj.name} is duplicated in paintableObjects array, skipping...");
-            continue;
+            return;
         }
 
-        Renderer renderer = paintableObject.GetComponent<Renderer>();
-        if (renderer == null) continue;
+        Renderer renderer = obj.GetComponent<Renderer>();
+        if (renderer == null) return;
 
         Texture mainTexture = renderer.material.mainTexture;
         if (mainTexture == null)
@@ -296,7 +315,7 @@ private void CacheOriginalTextures()
             mainTexture = renderer.material.GetTexture("_BaseMap");
         }
 
-        if (mainTexture == null) continue;
+        if (mainTexture == null) return;
 
         // Create a copy of the original texture
         Texture2D originalCopy = null;
@@ -327,30 +346,21 @@ private void CacheOriginalTextures()
             Debug.Log($"PAINT_GUN >>> Cached original texture for: {obj.name}");
         }
     }
-}
 
-// Add this new public method to reset all textures
-public void ResetAllTextures()
-{
-    foreach (var kvp in originalTextures)
+    public void ResetAllTextures()
     {
-        GameObject obj = kvp.Key;
-        Texture2D originalTexture = kvp.Value;
+        foreach (var kvp in originalTextures)
+        {
+            GameObject obj = kvp.Key;
+            Texture2D originalTexture = kvp.Value;
 
-        if (obj == null) continue;
+            if (obj == null) continue;
 
-        Renderer renderer = obj.GetComponent<Renderer>();
-        if (renderer == null) continue;
+            Renderer renderer = obj.GetComponent<Renderer>();
+            if (renderer == null) continue;
 
-        // Restore the original texture
-        renderer.material.SetTexture("_BaseMap", originalTexture);
-        
-        Debug.Log($"PAINT_GUN >>> Reset texture for: {obj.name}");
+            renderer.material.SetTexture("_BaseMap", originalTexture);
+            Debug.Log($"PAINT_GUN >>> Reset texture for: {obj.name}");
+        }
     }
-
-    // Clear the modified texture cache
-    cachedTextures.Clear();
-    
-    Debug.Log("PAINT_GUN >>> All textures reset to original state");
-}
 }
