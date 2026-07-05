@@ -99,10 +99,30 @@ public class HardReset : MonoBehaviour
 
     private void ResetAssets()
     {
-
         for (int i = 0; i < Assets.Count(); i++)
         {
-            
+            if (Assets[i].name == "Decoration")
+            {
+                for (int j = 0; j < Assets[i].transform.childCount; j++)
+                {
+                    if (Assets[i].transform.GetChild(j).GetComponentInChildren<XRGrabInteractable>() == null)
+                    {
+                        continue;
+                    }
+                    Transform child = Assets[i].transform.GetChild(j);
+                    Transform prefabChild = AssetsPrefab[i].transform.GetChild(j);
+
+                    var grabs = child.GetComponentsInChildren<XRGrabInteractable>();
+                    var prefabGrabs = prefabChild.GetComponentsInChildren<XRGrabInteractable>();
+
+                    for (int k = 0; k < Mathf.Min(grabs.Length, prefabGrabs.Length); k++)
+                    {
+                        grabs[k].transform.SetLocalPositionAndRotation(
+                            prefabGrabs[k].transform.localPosition,
+                            prefabGrabs[k].transform.localRotation);
+                    }
+                }
+            } else
             {
                 Assets[i].transform.position = AssetsTrans[i].position;
                 Assets[i].transform.eulerAngles = AssetsTrans[i].eulerAngles;
