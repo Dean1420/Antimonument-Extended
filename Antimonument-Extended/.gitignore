@@ -101,3 +101,5 @@ InitTestScene*.unity*
 # Added manually
 Assets/_Recovery/
 Assets/_Recovery.meta
+Packages/manifest.json
+Packages/packages-lock.json
