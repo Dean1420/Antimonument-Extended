@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.XR;
 using System.Collections.Generic;
-
 public class AnnotationToggler : MonoBehaviour
 {
     public ControllerAnnotation[] allAnnotations;
 
     private InputDevice leftController;
     private bool lastButtonState = false;
+
 
     void Update()
     {
@@ -23,15 +23,27 @@ public class AnnotationToggler : MonoBehaviour
                 leftController = devices[0];
         }
 
-        // X Button Linker Controller
-        if (leftController.TryGetFeatureValue(CommonUsages.primaryButton, out bool pressed))
+// X Button Linker Controller
+if (leftController.TryGetFeatureValue(CommonUsages.primaryButton, out bool pressed))
+{
+    if (pressed && !lastButtonState)
+    {
+        ControllerAnnotation.AnnotationsGloballyEnabled = !ControllerAnnotation.AnnotationsGloballyEnabled;
+
+        foreach (var annotation in allAnnotations)
         {
-            if (pressed && !lastButtonState)
+            if (ControllerAnnotation.AnnotationsGloballyEnabled)
             {
-                foreach (var annotation in allAnnotations)
-                    annotation.ToggleVisibility();
+                if (!annotation.isContextSensitive) // context-sensitive nicht automatisch zeigen
+                    annotation.ShowAnnotation();
             }
-            lastButtonState = pressed;
+            else
+            {
+                annotation.HideAnnotation();
+            }
         }
     }
+    lastButtonState = pressed;
+}
+}
 }
