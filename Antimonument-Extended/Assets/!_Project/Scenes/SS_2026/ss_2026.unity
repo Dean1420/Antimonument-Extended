@@ -763,9 +763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dekoration greifen und loslanssen!
-
-    grab and release decoration!'
+  m_text: grab and release decoration!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3761,9 +3759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mehr Dekoration anzeigen
-
-    View mor decoration
+  m_text: 'View more decoration
 
 '
   m_isRightToLeft: 0
@@ -4070,7 +4066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9080792501524262194, guid: 673fdef903d34c745947ad9829244d93, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4420,7 +4416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6192346026960614014, guid: 5b67436592ce811eca2bc0defa226ab9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7885856759218091667, guid: 5b67436592ce811eca2bc0defa226ab9, type: 3}
       propertyPath: m_IsActive
