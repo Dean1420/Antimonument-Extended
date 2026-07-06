@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba11b4eaa04a0b4ca2c1f68bb2cd50d, type: 3}
+  m_Name: Loewe
+  m_EditorClassIdentifier: 
+  Title: "Bergischer L\xF6we"
+  SocketSpawnPoint: {x: 0, y: 0, z: 0.95}
+  SocketSpawnRotation: {x: -180.113, y: -176.689, z: 141.325}
+  GrabbableStatuePrefab: {fileID: 703124645836098179, guid: 5937754afb7cf5b4f91c71e38973464e, type: 3}
+  SoundClip: {fileID: 8300000, guid: ca43d17805743d94f914e3dbe494662c, type: 3}
+  ExplanationClip: {fileID: 8300000, guid: 0792ec76495aead4bb58ba0a05eb3076, type: 3}
+  LifeSizeStatuePrefab: {fileID: -157464329529495548, guid: 0f2b38d108ac2d543901b0b1e54990e1, type: 3}
+  StatueSpawnPoint: {x: 0, y: 1.1, z: 1.92}
+  StatueSpawnRotation: {x: -91.988, y: -193.134, z: 61.16}
+  ScaleFactor: 1
+  ExportVector: {x: -91.988, y: -13, z: 61.16}
+  Skybox: {fileID: 2100000, guid: add1f928ef176b8459d9c0a1ae7f9564, type: 2}
+  Tex: {fileID: 2800000, guid: 2df715769cbdd044dbeafbf4bac66bff, type: 3}
+  TempTex: {fileID: 2800000, guid: e6a741bff792fdd47bc19ead803cdc25, type: 3}

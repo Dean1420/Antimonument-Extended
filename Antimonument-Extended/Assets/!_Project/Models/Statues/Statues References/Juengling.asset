@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba11b4eaa04a0b4ca2c1f68bb2cd50d, type: 3}
+  m_Name: Juengling
+  m_EditorClassIdentifier: 
+  Title: "Stehender J\xFCngling"
+  SocketSpawnPoint: {x: 0, y: 0, z: 0.8}
+  SocketSpawnRotation: {x: 0, y: 0, z: -90}
+  GrabbableStatuePrefab: {fileID: 8044972335269551516, guid: 61a334480d5455942a9d012093417c9f, type: 3}
+  SoundClip: {fileID: 8300000, guid: e72e1c6724d306d439e5b53b0ba9a684, type: 3}
+  ExplanationClip: {fileID: 8300000, guid: a48e0a324158244459e9f0fc43efec25, type: 3}
+  LifeSizeStatuePrefab: {fileID: 8083594980348396505, guid: 7267d2478321460439109f7c79fc3507, type: 3}
+  StatueSpawnPoint: {x: 0, y: 1, z: 1.7}
+  StatueSpawnRotation: {x: -90, y: 0, z: -87.5}
+  ScaleFactor: 1
+  ExportVector: {x: -90, y: 180, z: -87.5}
+  Skybox: {fileID: 2100000, guid: 077d38d33114f39f8adeaefef440025b, type: 2}
+  Tex: {fileID: 2800000, guid: 0f465bbb49616014c9c6aab07d3a4a20, type: 3}
+  TempTex: {fileID: 2800000, guid: c5f520d6b24cb0c40a29864dfe564090, type: 3}

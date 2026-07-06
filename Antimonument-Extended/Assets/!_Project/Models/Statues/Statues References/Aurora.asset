@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba11b4eaa04a0b4ca2c1f68bb2cd50d, type: 3}
+  m_Name: Aurora
+  m_EditorClassIdentifier: 
+  Title: Aurora
+  SocketSpawnPoint: {x: 0, y: 0, z: 0.9}
+  SocketSpawnRotation: {x: 0, y: 0, z: 90}
+  GrabbableStatuePrefab: {fileID: 2567612055837101735, guid: add718ee86a226345a61aa251435fada, type: 3}
+  SoundClip: {fileID: 8300000, guid: 0d1e26e51a46ee24dab591d70fa41a0d, type: 3}
+  ExplanationClip: {fileID: 8300000, guid: 98c72f94455904a1286ec513357168af, type: 3}
+  LifeSizeStatuePrefab: {fileID: -10533993073690914, guid: 330a79f37485275489b399968cc3fd22, type: 3}
+  StatueSpawnPoint: {x: -0.22953978, y: 0.37163, z: 2.20651}
+  StatueSpawnRotation: {x: 273.14764, y: 129.26968, z: 58.066746}
+  ScaleFactor: 0.475
+  ExportVector: {x: -90, y: 180, z: 90}
+  Skybox: {fileID: 2100000, guid: ce5d8d20ec1a545499eae1d2fe919500, type: 2}
+  Tex: {fileID: 2800000, guid: 93aaad7b15a9e0046b767ae5cffdc733, type: 3}
+  TempTex: {fileID: 2800000, guid: 4c349741123a3024abc762b6728ff0b1, type: 3}

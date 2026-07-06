@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba11b4eaa04a0b4ca2c1f68bb2cd50d, type: 3}
+  m_Name: "AufsteigenderJ\xFCngling"
+  m_EditorClassIdentifier: 
+  Title: "Aufsteigender J\xFCngling"
+  SocketSpawnPoint: {x: 0, y: 0, z: 0.8}
+  SocketSpawnRotation: {x: -176.852, y: 180, z: 58.07}
+  GrabbableStatuePrefab: {fileID: 282172682493846435, guid: f86b51bb7f24d8c47922b1756ab7d8c1, type: 3}
+  SoundClip: {fileID: 8300000, guid: 0d1e26e51a46ee24dab591d70fa41a0d, type: 3}
+  ExplanationClip: {fileID: 8300000, guid: 1bfdc612afe7b435c822fb97f961b881, type: 3}
+  LifeSizeStatuePrefab: {fileID: -10533993073690914, guid: d821e9af99ae4cd43a38d02de8675e61, type: 3}
+  StatueSpawnPoint: {x: 0, y: -0.15, z: 2.2}
+  StatueSpawnRotation: {x: -87.74, y: 210, z: 30.968}
+  ScaleFactor: 0.6
+  ExportVector: {x: -87.74, y: 30, z: 30.968}
+  Skybox: {fileID: 2100000, guid: 9bb12474d6c48064480905dd45a21b51, type: 2}
+  Tex: {fileID: 2800000, guid: d300ad90edff0694881a2e57c277ed17, type: 3}
+  TempTex: {fileID: 2800000, guid: 3ae48becc74dcaf489a2c5d428681888, type: 3}

@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 3
   tags:
   - Interactable
+<<<<<<< HEAD
+=======
+  - Statue
+  - Garbage
+  - Paintable
+  - Keyboard
+>>>>>>> upstream/main
   layers:
   - Default
   - TransparentFX
@@ -14,8 +21,8 @@ TagManager:
   - UI
   - Sliceable
   - ClickerFinger
-  - 
-  - 
+  - DefaultPicture
+  - SliceablePicture
   - 
   - 
   - 
