@@ -1,3 +1,6 @@
+
+
+
 using UnityEngine;
 using System.Collections;
 using Ftp;
@@ -5,8 +8,7 @@ using FileOperations;
 using System.Collections.Generic;
 using System.IO;
 using System;
-using UnityEngine.Networking;
-using System.Threading.Tasks;
+
 public class PhotoHandler : MonoBehaviour
 {
 
@@ -120,96 +122,43 @@ public class PhotoHandler : MonoBehaviour
     } 
 
 
-void UploadPolaroid()
+
+    void UploadPolaroid()
 {
     byte[] currentImageJpg = currentImage.EncodeToJPG();
-    string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm");
-    string filename = "file_" + timestamp + ".jpg";
-    StartCoroutine(WaitAndUpload(currentImageJpg, filename));
-}
-
-
-private IEnumerator WaitAndUpload(byte[] imageData, string filename)
-{
-    Debug.Log("POLAROID >>> waiting for extractor...");
-    yield return new WaitUntil(() => StreamingAssetsExtractor.IsReady);
-    Debug.Log("POLAROID >>> extractor ready, loading credentials...");
-
-    Dictionary<string, string> credentials = null;
-    yield return LoadCredentialsCoroutine(result => credentials = result);
-
-    if (credentials == null ||
-        !credentials.ContainsKey("username") ||
-        !credentials.ContainsKey("password") ||
-        !credentials.ContainsKey("url") ||
-        !credentials.ContainsKey("remoteDirectory"))
+    string fileType = ".jpg";
+    string timestamp = DateTime.Now.ToString("yyyy.MM.dd_HH.mm.ss");
+    string filename = "polaroid_";
+    
+    string polaroidFolder = Path.Combine(PersistentDataPaths.Runtime, "Polaroid");
+    string fullPath = Path.Combine(polaroidFolder, timestamp + filename + fileType);
+    
+    Directory.CreateDirectory(polaroidFolder);
+    File.WriteAllBytes(fullPath, currentImageJpg);
+    Debug.Log($"POLAROID >>> Successfully saved");
+    
+    try
     {
-        Debug.LogError("POLAROID >>> credentials missing or incomplete, aborting upload");
-        yield break;
+        Dictionary<string, string> credentials = LoadCredentials();
+        Ftp.FtpHandler.uploadFile(
+            credentials["username"],
+            credentials["password"],
+            credentials["url"],
+            credentials["remoteDirectory"],
+            timestamp + filename + fileType,
+            currentImageJpg);
     }
-
-    Debug.Log("POLAROID >>> credentials loaded, starting upload...");
-
-    Task uploadTask = FtpHandler.UploadFile(
-        credentials["username"],
-        credentials["password"],
-        credentials["url"],
-        credentials["remoteDirectory"],
-        filename,
-        imageData);
-
-    yield return new WaitUntil(() => uploadTask.IsCompleted);
-
-    if (uploadTask.IsFaulted)
+    catch (Exception e)
     {
-        Debug.LogError($"POLAROID >>> upload task faulted: {uploadTask.Exception}");
-    }
-    else
-    {
-        Debug.Log("POLAROID >>> upload finished");
+        Debug.LogWarning($"POLAROID >>> FTP upload failed: {e.Message}");
     }
 }
 
-private IEnumerator LoadCredentialsCoroutine(Action<Dictionary<string, string>> onLoaded)
+    private Dictionary<string, string> LoadCredentials()
 {
     string pathToCredentials = Path.Combine(StreamingAssetsPaths.Credentials, "Secrets", "FTP.txt");
     string separator = ":";
-
-    using (UnityWebRequest request = UnityWebRequest.Get(pathToCredentials))
-    {
-        yield return request.SendWebRequest();
-
-        if (request.result != UnityWebRequest.Result.Success)
-        {
-            Debug.LogError($"POLAROID >>> failed to load credentials file: {request.error}");
-            onLoaded(null);
-            yield break;
-        }
-
-        string text = request.downloadHandler.text;
-        Dictionary<string, string> credentials = ParseCredentials(text, separator);
-        onLoaded(credentials);
-    }
+    return Text.LoadLinesByKeyValue(pathToCredentials, separator);
 }
 
-private Dictionary<string, string> ParseCredentials(string text, string separator)
-{
-    var dict = new Dictionary<string, string>();
-    string[] lines = text.Split('\n');
-
-    foreach (string rawLine in lines)
-    {
-        string line = rawLine.Trim();
-        if (string.IsNullOrEmpty(line)) continue;
-
-        int index = line.IndexOf(separator);
-        if (index < 0) continue;
-
-        string key = line.Substring(0, index).Trim();
-        string value = line.Substring(index + separator.Length).Trim();
-        dict[key] = value;
-    }
-
-    return dict;
-}
 }
