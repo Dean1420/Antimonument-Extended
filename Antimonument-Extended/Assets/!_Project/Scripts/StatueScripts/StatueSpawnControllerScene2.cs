@@ -4,9 +4,9 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class StatueSpawnController : MonoBehaviour
+public class StatueSpawnControllerScene2 : MonoBehaviour
 {
-    public static StatueSpawnController Singleton;
+    public static StatueSpawnControllerScene2 Singleton;
     //[SerializeField] TexturePainter TexPaint;
     //[SerializeField] SoundManager soundManager;
     //public PassthroughManager PassthroughManager;
@@ -20,7 +20,6 @@ public class StatueSpawnController : MonoBehaviour
     public Socket SocketPrefab;
     public Transform SocketParentTransform;
     public HardReset AddOnController;
-    public SliceObject sliceController;
     
     private StatueValues _currentStatue;
     private List<Statue> _statueInstances = new List<Statue>();
@@ -47,7 +46,7 @@ public class StatueSpawnController : MonoBehaviour
             var socket = Instantiate(SocketPrefab,SocketParentTransform);
             socket.transform.localPosition = Vector3.zero;
             socket.transform.localRotation = Quaternion.Euler(-90,0,0);
-            socket.transform.localPosition = Vector3.right / 2 * index;
+            socket.transform.localPosition = Vector3.right * index;
             socket.Init(statue);
             _sockets.Add(socket);
 
@@ -70,7 +69,6 @@ public class StatueSpawnController : MonoBehaviour
                 index *= -1;
             }
         }
-        
     }
     void OnTriggerEnter(Collider col)
     {
@@ -250,9 +248,6 @@ public class StatueSpawnController : MonoBehaviour
                 statue.transform.localPosition = statueData.StatueSpawnPoint;
                 statue.transform.localRotation = Quaternion.Euler(statueData.StatueSpawnRotation);
                 statue.gameObject.SetActive(false);
-                sliceController.removeOriginalStatue(statue);
-
-                Debug.Log("Reset statue: " + statue.StatueValues.Title);
             }
             else
             {
@@ -287,7 +282,6 @@ public class StatueSpawnController : MonoBehaviour
         foreach (var stat in _statueInstances)
         {                
             stat.gameObject.SetActive(stat.StatueValues == _currentStatue);
-            sliceController.addOriginalStatue(statueObject);
         }
         
         foreach (var socket in _sockets)

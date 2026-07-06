@@ -36,6 +36,10 @@ public class CallExternalFunction : MonoBehaviour
             //    Debug.LogError("TRIGGER >>> PhotoHandler not assigned!");
             //}
         }
+        if (useTrigger && ((1 << other.gameObject.layer) & allowedLayers) != 0)
+        {
+            onCollisionEnter?.Invoke();
+        }
     }
 
     private void OnTriggerExit(Collider other)

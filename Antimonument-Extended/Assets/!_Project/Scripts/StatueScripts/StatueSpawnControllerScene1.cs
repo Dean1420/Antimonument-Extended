@@ -4,9 +4,9 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class StatueSpawnController : MonoBehaviour
+public class StatueSpawnControllerScene1 : MonoBehaviour
 {
-    public static StatueSpawnController Singleton;
+    public static StatueSpawnControllerScene1 Singleton;
     //[SerializeField] TexturePainter TexPaint;
     //[SerializeField] SoundManager soundManager;
     //public PassthroughManager PassthroughManager;
@@ -21,7 +21,7 @@ public class StatueSpawnController : MonoBehaviour
     public Transform SocketParentTransform;
     public HardReset AddOnController;
     public SliceObject sliceController;
-    
+
     private StatueValues _currentStatue;
     private List<Statue> _statueInstances = new List<Statue>();
 
@@ -44,10 +44,10 @@ public class StatueSpawnController : MonoBehaviour
         int index = 0;
         foreach (var statue in AvailableStatues)
         {
-            var socket = Instantiate(SocketPrefab,SocketParentTransform);
+            var socket = Instantiate(SocketPrefab, SocketParentTransform);
             socket.transform.localPosition = Vector3.zero;
-            socket.transform.localRotation = Quaternion.Euler(-90,0,0);
-            socket.transform.localPosition = Vector3.right / 2 * index;
+            socket.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+            socket.transform.localPosition = Vector3.right * index;
             socket.Init(statue);
             _sockets.Add(socket);
 
@@ -61,7 +61,7 @@ public class StatueSpawnController : MonoBehaviour
 
             if (index == 0)
                 index++;
-            else if(index < 0)
+            else if (index < 0)
             {
                 index = (index - 1) * -1;
             }
@@ -70,7 +70,7 @@ public class StatueSpawnController : MonoBehaviour
                 index *= -1;
             }
         }
-        
+
     }
     void OnTriggerEnter(Collider col)
     {
@@ -208,8 +208,8 @@ public class StatueSpawnController : MonoBehaviour
         {
             ResetStatuesAndSockets();
             _currentStatue = null;
-            wasCurrentStatue =  true;
-            
+            wasCurrentStatue = true;
+
             DestroyStatueReal(TagPaint);
             DestroyStatueReal(TagInter);
         }
@@ -217,23 +217,23 @@ public class StatueSpawnController : MonoBehaviour
         {
             foreach (var socket in _sockets)
             {
-                if(socket.StatueValues == statue)
+                if (socket.StatueValues == statue)
                     socket.Reset();
             }
 
-            wasCurrentStatue =  false;
+            wasCurrentStatue = false;
         }
 
         return wasCurrentStatue;
     }
-    
+
     public void ResetStatuesAndSockets()
     {
         foreach (var socket in _sockets)
         {
             socket.Reset();
         }
-        
+
         DestroyStatueReal(TagPaint);
         DestroyStatueReal(TagInter);
 
@@ -250,8 +250,8 @@ public class StatueSpawnController : MonoBehaviour
                 statue.transform.localPosition = statueData.StatueSpawnPoint;
                 statue.transform.localRotation = Quaternion.Euler(statueData.StatueSpawnRotation);
                 statue.gameObject.SetActive(false);
-                sliceController.removeOriginalStatue(statue);
 
+                sliceController.removeOriginalStatue(statue);
                 Debug.Log("Reset statue: " + statue.StatueValues.Title);
             }
             else
@@ -260,7 +260,7 @@ public class StatueSpawnController : MonoBehaviour
             }
 
         }
-        
+
         //TexPaint.ResetAll();
 
         _currentStatue = null;
@@ -268,7 +268,7 @@ public class StatueSpawnController : MonoBehaviour
 
     public string GetCurrentName()
     {
-        return _currentStatue? _currentStatue.Title: "None";
+        return _currentStatue ? _currentStatue.Title : "None";
     }
 
     public void SetSockelActive(StatueValues statue)
@@ -277,26 +277,27 @@ public class StatueSpawnController : MonoBehaviour
         DestroyStatueReal(TagInter);
         AddOnController.ResetAddOns();
         //PassthroughManager.NewStatue(statue.Skybox);
-        
+
         //soundManager.PlayStatueSound(_currentStatue.SoundClip,_currentStatue.ExplanationClip); 
-        
+
         //TexPaint.restoreMaterial();
 
         var statueObject = _statueInstances.FirstOrDefault(stat => stat.StatueValues == _currentStatue);
-        
+
         foreach (var stat in _statueInstances)
-        {                
+        {
             stat.gameObject.SetActive(stat.StatueValues == _currentStatue);
-            sliceController.addOriginalStatue(statueObject);
+
         }
-        
+        sliceController.addOriginalStatue(statueObject);
+
         foreach (var socket in _sockets)
         {
-            if(socket.StatueValues != statue)
+            if (socket.StatueValues != statue)
                 socket.Reset();
         }
-        
-        
+
+
         //TexPaint.statue = statueObject.gameObject;
         var tex = (statue.Tex);
         var tempTex = (statue.TempTex);
@@ -304,10 +305,10 @@ public class StatueSpawnController : MonoBehaviour
         //TexPaint.tex2 = tempTex;
 
         RenderSettings.skybox = statue.Skybox;
-        
+
         DynamicGI.UpdateEnvironment();
         Probe.RenderProbe();
-        
+
         //TexPaint.statue.GetComponent<MeshRenderer>().material.mainTexture = tex;
         //TexPaint.rendTex.GetComponent<MeshRenderer>().material.mainTexture = tempTex;
     }

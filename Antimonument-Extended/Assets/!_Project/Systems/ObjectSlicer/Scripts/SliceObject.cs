@@ -259,10 +259,27 @@ public void MakeSlicesGrabbable()
 
     public void addOriginalStatue(Statue statue)
     {
+        if (statue == null)
+        {
+            return;
+        }
         if (!originalObjects.Contains(statue.gameObject))
         {
+            originalObjects.Clear();
             originalObjects.Add(statue.gameObject);
             Debug.Log($"SLICE >>> Added original statue: {statue.name}");
+        }
+        else
+        {
+            originalObjects.Remove(statue.gameObject);
+        }
+    }
+    public void removeOriginalStatue(Statue statue)
+    {
+        if (originalObjects.Contains(statue.gameObject))
+        {
+            originalObjects.Remove(statue.gameObject);
+            Debug.Log($"SLICE >>> Removed original statue: {statue.name}");
         }
     }
 }
