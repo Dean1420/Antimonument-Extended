@@ -2908,7 +2908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4503908663501471344, guid: 34b0eee53415f26069a4de17fe5e8488, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 768
+      value: 833
       objectReference: {fileID: 0}
     - target: {fileID: 4663743686699379060, guid: 34b0eee53415f26069a4de17fe5e8488, type: 3}
       propertyPath: m_LocalScale.x
@@ -6116,37 +6116,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -61.066
       objectReference: {fileID: 0}
-    - target: {fileID: 642596398908434083, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 642596398908434083, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 698570887636847927, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 953181743814142918, guid: 5d09dea975f01545c963d287f063981b, type: 3}
       propertyPath: m_Name
       value: ObjectSlicer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1992292725351293726, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2189545729880125494, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508914654750905218, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3395348326920342014, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3964158246481209425, guid: 5d09dea975f01545c963d287f063981b, type: 3}
       propertyPath: sliceSound
@@ -6176,14 +6148,6 @@ PrefabInstance:
       propertyPath: 'originalObjects.Array.data[4]'
       value: 
       objectReference: {fileID: 6203784381750719025, guid: 18ab98d6ad5ab5c4b961ddcae15e27db, type: 3}
-    - target: {fileID: 5884067107912137018, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6903852664898375266, guid: 5d09dea975f01545c963d287f063981b, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6570,7 +6534,6 @@ MonoBehaviour:
   onCollisionEnter:
     m_PersistentCalls:
       m_Calls: []
-  photoHandler: {fileID: 1863980174}
 --- !u!1 &1785185543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6705,7 +6668,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  photoHandler: {fileID: 0}
 --- !u!1001 &1810874845
 PrefabInstance:
   m_ObjectHideFlags: 0
