@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba11b4eaa04a0b4ca2c1f68bb2cd50d, type: 3}
+  m_Name: Meerschnecke
+  m_EditorClassIdentifier: 
+  Title: Schneckenplastik
+  SocketSpawnPoint: {x: 0, y: 0, z: 1}
+  SocketSpawnRotation: {x: 88.699, y: -247.982, z: -67.988}
+  GrabbableStatuePrefab: {fileID: -1719179192909627524, guid: cb1a74630c46e9345b99fdcf00acde8c, type: 3}
+  SoundClip: {fileID: 8300000, guid: 04e403990212f5648b59567d3927b4ae, type: 3}
+  ExplanationClip: {fileID: 8300000, guid: 2352df3135130ac4899aca1cd0bf5c12, type: 3}
+  LifeSizeStatuePrefab: {fileID: -5291245352132463630, guid: 18ab98d6ad5ab5c4b961ddcae15e27db, type: 3}
+  StatueSpawnPoint: {x: 0, y: 1.86, z: 6}
+  StatueSpawnRotation: {x: -90, y: 0, z: 188.898}
+  ScaleFactor: 1
+  ExportVector: {x: -90, y: 180, z: 188.898}
+  Skybox: {fileID: 2100000, guid: 494f0259e74f0b5699714e61b69d1a46, type: 2}
+  Tex: {fileID: 2800000, guid: a56cb89b461ec354998eda783ba7c152, type: 3}
+  TempTex: {fileID: 2800000, guid: 2be785fca75261e4c89f3f8f2e025ff6, type: 3}

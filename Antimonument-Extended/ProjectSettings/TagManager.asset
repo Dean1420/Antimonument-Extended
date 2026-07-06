@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactable
   - Statue
+  - Garbage
+  - Paintable
   - Keyboard
   layers:
   - Default
@@ -16,8 +18,8 @@ TagManager:
   - UI
   - Sliceable
   - ClickerFinger
-  - 
-  - 
+  - DefaultPicture
+  - SliceablePicture
   - 
   - 
   - Keyboard
