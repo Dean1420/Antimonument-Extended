@@ -1,5 +1,6 @@
 GaussianSplats/.gitignore
 Credentials/Secrets/.gitignore
+Credentials/Secrets/FTP.txt
 Credentials/Templates/FTP.txt
 GaussianSplats/ply/cameras.json
 GaussianSplats/ply/cfg_args

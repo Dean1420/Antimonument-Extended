@@ -13,11 +13,18 @@ public class ControllerAnnotation : MonoBehaviour
 
     [Header("Einstellungen")]
     public string actionName = "Teleport";
-
+    public bool isContextSensitive = false;
     private bool isVisible = true;
 
+    public static bool AnnotationsGloballyEnabled = true;
     void Start()
     {
+        if (isContextSensitive)
+    {
+        isVisible = false;
+        labelText.gameObject.SetActive(false);
+        lineRenderer.enabled = false;
+    }
         labelText.text = actionName;
         lineRenderer.positionCount = 2;
     }
@@ -33,10 +40,19 @@ public class ControllerAnnotation : MonoBehaviour
         labelTarget.Rotate(0, 180f, 0);
     }
 
-    public void ToggleVisibility()
-    {
-        isVisible = !isVisible;
-        lineRenderer.enabled = isVisible;
-        labelText.gameObject.SetActive(isVisible);
-    }
+public void ShowAnnotation()
+{
+    if (!AnnotationsGloballyEnabled) return;
+    isVisible = true;
+    lineRenderer.enabled = true;
+    labelText.gameObject.SetActive(true);
+}
+
+public void HideAnnotation()
+{
+    isVisible = false;
+    lineRenderer.enabled = false;
+    labelText.gameObject.SetActive(false);
+}
+
 }

@@ -17,6 +17,7 @@ public class StreamingAssetsExtractor : MonoBehaviour
     {
         // fetch and read the manifest
         string manifestSrc = Path.Combine(Application.streamingAssetsPath, ManifestFile);
+        Debug.Log($"STREAMING_ASSETS_EXTRACTOR >>> manifest path: {manifestSrc}");
         using UnityWebRequest manifestReq = UnityWebRequest.Get(manifestSrc);
         yield return manifestReq.SendWebRequest();
 
@@ -25,7 +26,7 @@ public class StreamingAssetsExtractor : MonoBehaviour
             Debug.LogError($"STREAMING_ASSETS_EXTRACTOR >>> failed to read manifest: {manifestReq.error}");
             yield break;
         }
-
+    Debug.Log($"STREAMING_ASSETS_EXTRACTOR >>> manifest content: {manifestReq.downloadHandler.text}");
         // extract each file listed in the manifest
         string[] files = manifestReq.downloadHandler.text.Split('\n');
         foreach (string file in files)
@@ -64,8 +65,11 @@ public class StreamingAssetsExtractor : MonoBehaviour
         Debug.Log($"Extracted: {dest}");
     }
 
+    public static bool IsReady = false;
+    
     private void OnDataReady()
     {
+            IsReady = true;
         Debug.Log("STREAMING_ASSETS_EXTRACTOR >>> all files ready");
     }
 }
