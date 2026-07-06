@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/!_Project/Scenes/SS_2026/ss_2026.unity
     guid: 33cf8769948f1f9ab9b0d94aa2127203
-  - enabled: 0
+  - enabled: 1
     path: Assets/!_Project/Scenes/SS_2026/ss_2026 2.unity
     guid: 7c8cb740476a13a459520e54753c4c02
   - enabled: 1

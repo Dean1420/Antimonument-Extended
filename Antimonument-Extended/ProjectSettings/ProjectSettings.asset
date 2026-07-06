@@ -147,6 +147,8 @@ PlayerSettings:
   bundleVersion: 0.1.2
   preloadedAssets:
   - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  - {fileID: -4796168697432321423, guid: d8f04b5ad501e211c950bb03d3c01cf6, type: 2}
+  - {fileID: 8582647863802374434, guid: 102cfbc7667cbd98fad903fa379ecf05, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -168,7 +170,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.AntimonumentExtended.com.unity.Scene.Door
+    Android: com.AntimonumentExtended.com.unity.Scene.Normal
     Standalone: com.Unity-Technologies.com.unity.template.urp-blank
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
