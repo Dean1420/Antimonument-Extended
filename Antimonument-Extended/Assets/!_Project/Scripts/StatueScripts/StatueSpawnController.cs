@@ -28,6 +28,8 @@ public class StatueSpawnController : MonoBehaviour
     private List<Socket> _sockets = new List<Socket>();
     // private Statue _statueInstance;
 
+    public float radius;
+
     void Awake()
     {
         Singleton = this;
@@ -41,16 +43,33 @@ public class StatueSpawnController : MonoBehaviour
     private void InitSockets()
     {
         _statueInstances = new List<Statue>();
-        int index = 0;
-        foreach (var statue in AvailableStatues)
+
+        // Spawn sockets in a half-circle arrangement
+        int socketCount = AvailableStatues.Count;
+        //float radius = 1f; 
+        float startAngle = 0f; 
+        float endAngle = 180f; 
+        
+        for (int i = 0; i < socketCount; i++)
         {
-            var socket = Instantiate(SocketPrefab,SocketParentTransform);
-            socket.transform.localPosition = Vector3.zero;
-            socket.transform.localRotation = Quaternion.Euler(-90,0,0);
-            socket.transform.localPosition = Vector3.right / 2 * index;
+            var statue = AvailableStatues[i];
+            
+            float angle = Mathf.Lerp(startAngle, endAngle, socketCount > 1 ? (float)i / (socketCount - 1) : 0.5f);
+            float radians = angle * Mathf.Deg2Rad;
+            
+            float x = Mathf.Cos(radians) * radius;
+            float z = Mathf.Sin(radians) * radius;
+            
+            var socket = Instantiate(SocketPrefab, SocketParentTransform);
+            socket.transform.localPosition = new Vector3(x, 0, z);
+
+            float rotationY = 90f - angle;
+            socket.transform.localRotation = Quaternion.Euler(-90, rotationY, 0);
+            
             socket.Init(statue);
             _sockets.Add(socket);
-
+            
+            //Debug.Log($"Socket {i} positioned at ({x:F2}, 0, {z:F2}) with rotation Y: {rotationY:F2} for statue: {statue.Title}");
             var lifeSizeStatue = Instantiate(statue.LifeSizeStatuePrefab);
             lifeSizeStatue.transform.localPosition = statue.StatueSpawnPoint;
             lifeSizeStatue.transform.localRotation = Quaternion.Euler(statue.StatueSpawnRotation);
@@ -58,19 +77,7 @@ public class StatueSpawnController : MonoBehaviour
             lifeSizeStatue.StatueValues = statue;
             lifeSizeStatue.gameObject.SetActive(false);
             _statueInstances.Add(lifeSizeStatue);
-
-            if (index == 0)
-                index++;
-            else if(index < 0)
-            {
-                index = (index - 1) * -1;
-            }
-            else
-            {
-                index *= -1;
-            }
         }
-        
     }
     void OnTriggerEnter(Collider col)
     {

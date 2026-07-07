@@ -2143,7 +2143,7 @@ PrefabInstance:
     - target: {fileID: -5277177594194903362, guid: 03fc8b7047932824bb1b0bcb2d75117e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 59befe278d7a6674b92faf6ff564194f, type: 2}
+      objectReference: {fileID: 2100000, guid: bed85fb0a94b65c449347b488981a73c, type: 2}
     - target: {fileID: 919132149155446097, guid: 03fc8b7047932824bb1b0bcb2d75117e, type: 3}
       propertyPath: m_Name
       value: AbsolutVodka

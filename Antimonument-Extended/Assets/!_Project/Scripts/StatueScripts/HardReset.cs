@@ -104,7 +104,7 @@ public class HardReset : MonoBehaviour
     {
         for (int i = 0; i < Assets.Count(); i++)
         {
-            if (Assets[i].name == "Decoration")
+            if (Assets[i].name == "Decorations")
             {
                 for (int j = 0; j < Assets[i].transform.childCount; j++)
                 {
@@ -114,6 +114,7 @@ public class HardReset : MonoBehaviour
                     }
                     Transform child = Assets[i].transform.GetChild(j);
                     Transform prefabChild = AssetsPrefab[i].transform.GetChild(j);
+                    Debug.Log("Resetting Decoration: " + child.name);
 
                     var grabs = child.GetComponentsInChildren<XRGrabInteractable>();
                     var prefabGrabs = prefabChild.GetComponentsInChildren<XRGrabInteractable>();

@@ -149,6 +149,8 @@ MonoBehaviour:
   SocketPrefab: {fileID: 5240290002901808993, guid: 69d7830f172fcfa468f00395624052fe, type: 3}
   SocketParentTransform: {fileID: 2017245241482048079}
   AddOnController: {fileID: 561137126387774684, guid: 35d9007a53da10f4eb199044be1e7351, type: 3}
+  sliceController: {fileID: 0}
+  radius: 1
 --- !u!65 &4504068178298720387
 BoxCollider:
   m_ObjectHideFlags: 0
