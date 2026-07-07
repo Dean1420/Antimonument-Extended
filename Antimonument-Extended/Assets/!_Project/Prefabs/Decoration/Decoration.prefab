@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 6192346026960614014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2919683, y: 0, z: -1.004}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1046,10 +1046,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4166310791892338496, guid: acb940a5598dfe848ab04ee487d6be5a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cddf0381193f51a46bc3f7ce32919b0f, type: 2}
     - target: {fileID: 919132149155446097, guid: acb940a5598dfe848ab04ee487d6be5a, type: 3}
       propertyPath: m_Name
       value: HeartGlasses
       objectReference: {fileID: 0}
+    - target: {fileID: 2379981538969798619, guid: acb940a5598dfe848ab04ee487d6be5a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 32f77032cdd04364583f8399ddfec818, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1315,6 +1323,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e4e220ccef6ed5249a388dc63efd07f6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5287e29c612851746ab2ef144692421c, type: 2}
     - target: {fileID: 919132149155446097, guid: e4e220ccef6ed5249a388dc63efd07f6, type: 3}
       propertyPath: m_Name
       value: HighHeels
@@ -2670,6 +2682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2c784b22d5dfffe418fc515fe6e1f464, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ddeb589b2ca6ee4591516b6f2c992a5, type: 2}
     - target: {fileID: 919132149155446097, guid: 2c784b22d5dfffe418fc515fe6e1f464, type: 3}
       propertyPath: m_Name
       value: MegaPhone
@@ -3281,9 +3297,13 @@ PrefabInstance:
       value: Shelf
       objectReference: {fileID: 0}
     - target: {fileID: 6621948620711470812, guid: 2382ed32de7a92f448fe3481ee96447f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2eb26c12435184ab2842edc9a51aa7, type: 2}
+    - target: {fileID: 6621948620711470812, guid: 2382ed32de7a92f448fe3481ee96447f, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 59befe278d7a6674b92faf6ff564194f, type: 2}
+      objectReference: {fileID: 2100000, guid: d8b3de533d6f5e44b9021475dd3f9cad, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3362,6 +3382,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 669c400ca5913ee4482fbe0fa1e56af8, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 3df3e34912b19c544a443ea53a0345df, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 59befe278d7a6674b92faf6ff564194f, type: 2}
     - target: {fileID: -7511558181221131132, guid: 3df3e34912b19c544a443ea53a0345df, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
@@ -3910,6 +3934,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 160dc39c5222f4843851d1f78ca39cf2, type: 2}
     - target: {fileID: 919132149155446097, guid: 68481d843478c3544a83a3789f0afa99, type: 3}
       propertyPath: m_Name
       value: Sausages
@@ -4138,15 +4166,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3569684
+      value: 0.4129
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.449
+      value: 0.5097
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.02700007
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4187,6 +4215,18 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
       propertyPath: m_Name
       value: Sneakers
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975773033993796902, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975773033993796902, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975773033993796902, guid: 66d58aa4cb0277b4da984802e9abfac5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
