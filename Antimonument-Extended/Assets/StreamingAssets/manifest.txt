@@ -1,6 +1,5 @@
 GaussianSplats/.gitignore
 Credentials/Secrets/FTP.txt
-Credentials/Templates/FTP.txt
 GaussianSplats/ply/cameras.json
 GaussianSplats/ply/cfg_args
 GaussianSplats/lcc/lcc-result/Virtuelles Studio.lcc
