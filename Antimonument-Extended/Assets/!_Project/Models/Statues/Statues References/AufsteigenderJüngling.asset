@@ -19,9 +19,9 @@ MonoBehaviour:
   SoundClip: {fileID: 8300000, guid: 0d1e26e51a46ee24dab591d70fa41a0d, type: 3}
   ExplanationClip: {fileID: 8300000, guid: 1bfdc612afe7b435c822fb97f961b881, type: 3}
   LifeSizeStatuePrefab: {fileID: -10533993073690914, guid: d821e9af99ae4cd43a38d02de8675e61, type: 3}
-  StatueSpawnPoint: {x: 0, y: -0.15, z: 2.2}
-  StatueSpawnRotation: {x: -87.74, y: 210, z: 30.968}
-  ScaleFactor: 0.6
+  StatueSpawnPoint: {x: 0, y: -0.15, z: 1.5}
+  StatueSpawnRotation: {x: -87.74, y: 30, z: 30.968}
+  ScaleFactor: 0.8
   ExportVector: {x: -87.74, y: 30, z: 30.968}
   Skybox: {fileID: 2100000, guid: 9bb12474d6c48064480905dd45a21b51, type: 2}
   Tex: {fileID: 2800000, guid: d300ad90edff0694881a2e57c277ed17, type: 3}

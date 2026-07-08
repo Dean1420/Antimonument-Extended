@@ -20,8 +20,8 @@ MonoBehaviour:
   ExplanationClip: {fileID: 8300000, guid: 2352df3135130ac4899aca1cd0bf5c12, type: 3}
   LifeSizeStatuePrefab: {fileID: -5291245352132463630, guid: 18ab98d6ad5ab5c4b961ddcae15e27db, type: 3}
   StatueSpawnPoint: {x: 0, y: 1.86, z: 2}
-  StatueSpawnRotation: {x: -90, y: 0, z: 188.898}
-  ScaleFactor: 1
+  StatueSpawnRotation: {x: -90, y: 180, z: 188.898}
+  ScaleFactor: 0.8
   ExportVector: {x: -90, y: 180, z: 188.898}
   Skybox: {fileID: 2100000, guid: 494f0259e74f0b5699714e61b69d1a46, type: 2}
   Tex: {fileID: 2800000, guid: a56cb89b461ec354998eda783ba7c152, type: 3}
