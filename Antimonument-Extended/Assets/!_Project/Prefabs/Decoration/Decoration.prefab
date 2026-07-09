@@ -115,10 +115,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CokeCans
       objectReference: {fileID: 0}
-    - target: {fileID: 5071642205148638489, guid: e05750cabf06d3545b36b2d703bcdba9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.28
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

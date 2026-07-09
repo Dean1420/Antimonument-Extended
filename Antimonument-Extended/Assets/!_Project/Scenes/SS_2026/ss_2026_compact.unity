@@ -6047,7 +6047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1784138314
 Transform:
   m_ObjectHideFlags: 0
@@ -6356,6 +6356,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597828245943211227, guid: c9181769b3909a94096bba1538246201, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164375457276294278, guid: c9181769b3909a94096bba1538246201, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5091315465571156690, guid: c9181769b3909a94096bba1538246201, type: 3}
@@ -6936,6 +6940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GLBExportFromArea
   boundingBox: {fileID: 1866559537}
   excludeRoot: {fileID: 1487241842}
+  childcube: {fileID: 0}
 --- !u!1 &1881896918
 GameObject:
   m_ObjectHideFlags: 0

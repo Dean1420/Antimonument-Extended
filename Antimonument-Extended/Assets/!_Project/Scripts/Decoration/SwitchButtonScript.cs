@@ -6,6 +6,7 @@ public class SwitchButtonScript : MonoBehaviour
     [SerializeField] private float pressDistance = 0.05f;
     [SerializeField] private float returnSpeed = 10f;
     [SerializeField] private float buttonCooltime = 0.6f;
+    [SerializeField] private ShelfSwitching switchScript;
 
     private Vector3 startLocalPosition;
     private Vector3 targetLocalPosition;
@@ -28,8 +29,12 @@ public class SwitchButtonScript : MonoBehaviour
     {
         if (isPressed || isCooltime) return;
         isPressed = true;
-
-        Invoke("ResetCooltime", buttonCooltime);
+        if (!isCooltime)
+        {
+            switchScript.SwitchingLeft();
+            isCooltime = true;
+            Invoke("ResetCooltime", buttonCooltime);
+        }
     }
 
     public void ButtonReleased()
@@ -40,5 +45,6 @@ public class SwitchButtonScript : MonoBehaviour
     private void ResetCooltime()
     {
         isCooltime = false;
+        Debug.Log("Button released");
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Aurora
   SocketSpawnPoint: {x: 0, y: 0, z: 0.9}
-  SocketSpawnRotation: {x: 0, y: 0, z: 90}
+  SocketSpawnRotation: {x: -0.003715655, y: -359.4411, z: -359.9841}
   GrabbableStatuePrefab: {fileID: 2567612055837101735, guid: add718ee86a226345a61aa251435fada, type: 3}
   SoundClip: {fileID: 8300000, guid: 0d1e26e51a46ee24dab591d70fa41a0d, type: 3}
   ExplanationClip: {fileID: 8300000, guid: 98c72f94455904a1286ec513357168af, type: 3}

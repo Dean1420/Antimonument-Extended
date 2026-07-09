@@ -14,6 +14,7 @@ public class GLBExportFromArea : MonoBehaviour
 {
     [SerializeField] private Transform boundingBox;
     [SerializeField] private Transform excludeRoot;
+    [SerializeField] private GameObject childcube;
     
 
     private class ObjectParentPair
@@ -54,6 +55,7 @@ public void Export()
 {
     Debug.Log("GLB >>> Export() called!");
     if (!ValidateBoundingBox()) return;
+    childcube.SetActive(true);
 
     List<ObjectParentPair> objectsToExport = FindObjectsInBoundingBox();
 
@@ -74,6 +76,7 @@ public void Export()
 
     RestoreOriginalParents(objectsToExport);
     CleanupTemporaryParent(tempRoot);
+    childcube.SetActive(false);
 
     if (!string.IsNullOrEmpty(glbFullPath))
     {
