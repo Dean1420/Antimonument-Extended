@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Face_guard
-    second: {fileID: 2100000, guid: ada9e296b3b34dafd955ee7b3ffa77bf, type: 2}
+    second: {fileID: 2100000, guid: a347caa6d4330be4b8049841389147d4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Helmet_42
-    second: {fileID: 2100000, guid: 0874c934837324b8585dcc9376142aa3, type: 2}
+    second: {fileID: 2100000, guid: 79cbeaa1497265f418327411b65a4d2b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Liner
-    second: {fileID: 2100000, guid: 1c340c085a1b851fa9b76a2a0d97a793, type: 2}
+    second: {fileID: 2100000, guid: b28ec3ef96c8dd6408c221ff6ae22eb6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mail
-    second: {fileID: 2100000, guid: d43465283bf4d24ca880ad973b7937fa, type: 2}
+    second: {fileID: 2100000, guid: d5f04eb41b0ae704da42023eff424dcd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

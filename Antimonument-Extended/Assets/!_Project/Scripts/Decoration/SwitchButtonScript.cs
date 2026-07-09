@@ -31,7 +31,7 @@ public class SwitchButtonScript : MonoBehaviour
         isPressed = true;
         if (!isCooltime)
         {
-            switchScript.SwitchingLeft();
+            switchScript.SwitchingRight();
             isCooltime = true;
             Invoke("ResetCooltime", buttonCooltime);
         }
