@@ -132,14 +132,26 @@ public class Paint : MonoBehaviour
         if (cachedTextures.ContainsKey(hitObject))
         {
             copyTexture = cachedTextures[hitObject];
+            Debug.Log($"PAINT_GUN >>> Using cached texture for: {hitObject.name}");
             return;
         }
 
-        // copy and cache texture
+        // Neu: Cache das Objekt BEVOR wir die Texture kopieren
+        Debug.Log($"PAINT_GUN >>> New object detected, caching texture for: {hitObject.name}");
+        CacheTextureForObject(hitObject);
+
+        // Versuche jetzt nochmal aus dem Cache zu holen
+        if (cachedTextures.ContainsKey(hitObject))
+        {
+            copyTexture = cachedTextures[hitObject];
+            Debug.Log($"PAINT_GUN >>> Successfully cached and retrieved texture for: {hitObject.name}");
+            return;
+        }
+
+        // Fallback: Erstelle Texture on-the-fly (sollte normalerweise nicht vorkommen)
+        Debug.LogWarning($"PAINT_GUN >>> Failed to cache texture for {hitObject.name}, creating on-the-fly");
+        
         Texture mainTexture = targetRenderer.material.mainTexture;
-
-        Debug.Log($"PAINT_GUN >>> Hit object: {raycastHit.transform.name}");
-
         if (mainTexture == null)
         {
             mainTexture = targetRenderer.material.GetTexture("_BaseMap");
@@ -147,7 +159,7 @@ public class Paint : MonoBehaviour
 
         if (mainTexture == null)
         {
-            Debug.LogError($"PAINT_GUN >>> No texture found");
+            Debug.LogError($"PAINT_GUN >>> No texture found on {hitObject.name}");
             copyTexture = null;
             return;
         }
@@ -178,11 +190,14 @@ public class Paint : MonoBehaviour
         else
         {
             Debug.LogError($"PAINT_GUN >>> Unsupported texture type: {mainTexture.GetType().Name}");
-
         }
 
-        cachedTextures.Add(hitObject, copyTexture);
-        Debug.Log($"PAINT_GUN >>> Cache Texture of object: {hitObject.name}");
+        // Auch hier cachen für zukünftige Verwendung
+        if (copyTexture != null && !cachedTextures.ContainsKey(hitObject))
+        {
+            cachedTextures.Add(hitObject, copyTexture);
+            Debug.Log($"PAINT_GUN >>> Added to cache: {hitObject.name}");
+        }
     }
 
     private void ShootRaycast()

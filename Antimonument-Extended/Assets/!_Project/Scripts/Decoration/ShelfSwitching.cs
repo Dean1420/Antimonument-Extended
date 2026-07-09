@@ -74,6 +74,7 @@ public class ShelfSwitching : MonoBehaviour
 
     public void SwitchingLeft()
     {
+        closetCollider.gameObject.SetActive(true);
         for (int i = 0; i < decoChildren[curDecoNum].Count; i++)
         {
             if (!closetCollider.bounds.Contains(decoChildren[curDecoNum][i].transform.position))
@@ -93,10 +94,12 @@ public class ShelfSwitching : MonoBehaviour
         {
             decoChildren[curDecoNum][i].gameObject.SetActive(true);
         }
+        closetCollider.gameObject.SetActive(false);
     }
 
     public void SwitchingRight()
     {
+        closetCollider.gameObject.SetActive(true);
         for (int i = 0; i < decoChildren[curDecoNum].Count; i++)
         {
             if (!closetCollider.bounds.Contains(decoChildren[curDecoNum][i].transform.position))
@@ -116,6 +119,6 @@ public class ShelfSwitching : MonoBehaviour
         {
             decoChildren[curDecoNum][i].gameObject.SetActive(true);
         }
-
+        closetCollider.gameObject.SetActive(false);
     }
 }

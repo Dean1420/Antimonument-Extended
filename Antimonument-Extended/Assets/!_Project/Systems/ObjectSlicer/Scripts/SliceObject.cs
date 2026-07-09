@@ -209,14 +209,18 @@ private int LayerMaskToLayer(LayerMask layerMask)
         XRGrabInteractable grabInteractable = slicedObject.AddComponent<XRGrabInteractable>();
         grabInteractable.useDynamicAttach = true;
 
-        // Copy paint data if available
-        if (originalPaintData != null)
-    {
-        Paint newPaint = slicedObject.AddComponent<Paint>();
-        // Copy paint-relevant data (du musst ggf. anpassen, je nachdem wie Paint strukturiert ist)
-        Debug.Log($"SLICE >>> Paint data copied to {slicedObject.name}");
+        // Cache the texture für das Paint System
+        Paint paintScript = FindObjectOfType<Paint>();
+        if (paintScript != null)
+        {
+            paintScript.CacheTextureForObject(slicedObject);
+            Debug.Log($"SLICE >>> Cached texture for sliced object: {slicedObject.name}");
+        }
+        else
+        {
+            Debug.LogWarning($"SLICE >>> Paint script not found!");
+        }
     }
-}
 
     public void ResetCuts()
     {

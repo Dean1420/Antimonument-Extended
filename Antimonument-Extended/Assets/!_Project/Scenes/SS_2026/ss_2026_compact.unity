@@ -949,6 +949,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Workbench
       objectReference: {fileID: 0}
+    - target: {fileID: 2765757058293488909, guid: 67f27b5f0833c090f919d79e5477bd41, type: 3}
+      propertyPath: color.b
+      value: 0.41960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765757058293488909, guid: 67f27b5f0833c090f919d79e5477bd41, type: 3}
+      propertyPath: color.g
+      value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765757058293488909, guid: 67f27b5f0833c090f919d79e5477bd41, type: 3}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3568948964613999733, guid: 67f27b5f0833c090f919d79e5477bd41, type: 3}
       propertyPath: m_Layer
       value: 3
