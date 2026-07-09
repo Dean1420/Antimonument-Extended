@@ -7011,7 +7011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GLBExportFromArea
   boundingBox: {fileID: 1866559537}
   excludeRoot: {fileID: 1487241842}
-  childcube: {fileID: 0}
+  childcube: {fileID: 1784138313}
 --- !u!1 &1881896918
 GameObject:
   m_ObjectHideFlags: 0

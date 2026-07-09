@@ -57,16 +57,17 @@ public void Export()
     if (!ValidateBoundingBox()) return;
     childcube.SetActive(true);
 
+    Debug.Log("GLB >>> Finding objects...");
     List<ObjectParentPair> objectsToExport = FindObjectsInBoundingBox();
-
+    Debug.Log($"GLB >>> Found {objectsToExport.Count} objects");
     if (objectsToExport.Count == 0)
     {
         Debug.LogWarning("GLB >>> No objects found in bounding box!");
         return;
     }
-
+    Debug.Log("GLB >>> Getting statue name...");
     string statueName = GetStatueName(objectsToExport);
-
+    Debug.Log("GLB >>> Creating temp parent...");
     GameObject tempRoot = CreateTemporaryParent(statueName);
     ReparentObjects(objectsToExport, tempRoot.transform);
 
