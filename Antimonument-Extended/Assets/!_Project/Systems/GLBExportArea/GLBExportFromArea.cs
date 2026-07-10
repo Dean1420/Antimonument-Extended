@@ -41,13 +41,13 @@ private string GetStatueName(List<ObjectParentPair> objects)
 {
     foreach (var pair in objects)
     {
-        if (pair.obj.CompareTag("Statue"))
+        if (pair.obj.CompareTag("Paintable"))
         {
             return pair.obj.name;
         }
     }
 
-    Debug.LogWarning("GLB >>> No object with tag 'Statue' found, falling back to default name");
+    Debug.LogWarning("GLB >>> No object with tag 'Paintable' found, falling back to default name");
     return "export_area";
 }
 
@@ -58,6 +58,7 @@ public void Export()
     childcube.SetActive(true);
 
     Debug.Log("GLB >>> Finding objects...");
+    Debug.Log($"GLB >>> excludeRoot is: {(excludeRoot == null ? "NULL" : excludeRoot.name)}");
     List<ObjectParentPair> objectsToExport = FindObjectsInBoundingBox();
     Debug.Log($"GLB >>> Found {objectsToExport.Count} objects");
     if (objectsToExport.Count == 0)

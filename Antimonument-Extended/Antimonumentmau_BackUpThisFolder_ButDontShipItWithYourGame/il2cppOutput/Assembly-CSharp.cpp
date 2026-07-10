@@ -519,6 +519,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral38245FF93B0FA688194796F97170B397044AFAA5
 IL2CPP_EXTERN_C String_t* _stringLiteral3BF35F255EAB6C8F0F4ACAE319B26008A7FC7263;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E0F2A7B8A36AA0A2FDF454BCB5CD107AD610817;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E7CFBB1C604560276A864D3939659E83A270FDB;
+IL2CPP_EXTERN_C String_t* _stringLiteral3F8C9CD3DA5EE50C97D10F8D481800947B49AA4C;
 IL2CPP_EXTERN_C String_t* _stringLiteral3FC01FA9C154BB431172B3D61FC5EF5D5B5FAFB1;
 IL2CPP_EXTERN_C String_t* _stringLiteral413E4BB03B4C4CDF4866AFDFAC8B2B2B72636BDA;
 IL2CPP_EXTERN_C String_t* _stringLiteral42559C2140EDFAB50DB6AE7DCF62B93B4DA42968;
@@ -553,6 +554,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral62276E9B0963A652AE7404059058F8C8E455B262
 IL2CPP_EXTERN_C String_t* _stringLiteral62304423A1D566DD9F5C61E1FEF5425E42F8EFA8;
 IL2CPP_EXTERN_C String_t* _stringLiteral627261A267157018F01AA8AB5D69AF62EB77B072;
 IL2CPP_EXTERN_C String_t* _stringLiteral65AB2ACF01874F13351AE7C9B765CD504DAA0EAC;
+IL2CPP_EXTERN_C String_t* _stringLiteral6689C3AF8FED576A6E95B4475499C5CCF30A508D;
 IL2CPP_EXTERN_C String_t* _stringLiteral67BEC592386C17C68CF044FFB14169A1073AC7EB;
 IL2CPP_EXTERN_C String_t* _stringLiteral684F9F5743C3D1DE5AF358333F20040FBA298574;
 IL2CPP_EXTERN_C String_t* _stringLiteral6A3C4D769C28181426A4F595B1E562B07C32D10F;
@@ -609,7 +611,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralD20407CCBC6991C356B45C75227DF788AB1DFF0D
 IL2CPP_EXTERN_C String_t* _stringLiteralD323D034BE781EABAD4E7A1D746724C7E704B771;
 IL2CPP_EXTERN_C String_t* _stringLiteralD3637A8E71CE6557147F2FDE6D2C28BFBE20BB5B;
 IL2CPP_EXTERN_C String_t* _stringLiteralD3C3E2B70F70FD1199F3152A82E2FFE8CD96A1F3;
-IL2CPP_EXTERN_C String_t* _stringLiteralD753A0C4DC0CCF16C89C86A23963135820841580;
 IL2CPP_EXTERN_C String_t* _stringLiteralD7CC4528988100434DC8BA5B4A713FE36DB8ECD9;
 IL2CPP_EXTERN_C String_t* _stringLiteralD7D6CD281D4768AC977CD816639F8B33ECAD2401;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA30A517ED0301DE7B0E1D0C9EF95117E66872D4;
@@ -627,7 +628,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE99EB7B323FB71D1956C7BCBB97F770272E03721
 IL2CPP_EXTERN_C String_t* _stringLiteralEA09F6D19A126E5A38C194EBC2A690D9D20EDF53;
 IL2CPP_EXTERN_C String_t* _stringLiteralEABA134C51B533F3EEEFF84C73EE7E0ED1BAC69F;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB21F4926C9FE3AE15CCCDAB43A3B3B4EB5F3CF5;
-IL2CPP_EXTERN_C String_t* _stringLiteralEB5012D636AE36B6F51E1A14D244588906B21AAB;
 IL2CPP_EXTERN_C String_t* _stringLiteralED91C3E3A40E0EFB2F8C37F371F162CBAA922ADE;
 IL2CPP_EXTERN_C String_t* _stringLiteralEECDF4E0A1FCA99466EE63534DECEE5E2798D6D4;
 IL2CPP_EXTERN_C String_t* _stringLiteralEF1FC82060A5F0C14A881CE461917A17ACED858E;
@@ -16446,9 +16446,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GLBExportFromArea_GetStatueName_m56
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m828F19B20A203DDF028F7FB405B114C4032965F1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m4BF744996235CEFF2A887AE0807F837B4CBDAE60_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9F0E77EABEEC8AD6548AC698CD01E4B705DDC9AD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6689C3AF8FED576A6E95B4475499C5CCF30A508D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8F768BCCBAC0AD20DDFFA2F703A98A213E62DF2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD753A0C4DC0CCF16C89C86A23963135820841580);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEB5012D636AE36B6F51E1A14D244588906B21AAB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB85409C244422493307AF8A40FE8FED3E4B6F735);
 		s_Il2CppMethodInitialized = true;
 	}
 	Enumerator_t3E55141C5E8F86A1D8829B5828EF1280F5956E15 V_0;
@@ -16491,7 +16491,7 @@ IL_0009_1:
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = L_3->___obj;
 				NullCheck(L_4);
 				bool L_5;
-				L_5 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_4, _stringLiteralEB5012D636AE36B6F51E1A14D244588906B21AAB, NULL);
+				L_5 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_4, _stringLiteralB85409C244422493307AF8A40FE8FED3E4B6F735, NULL);
 				if (!L_5)
 				{
 					goto IL_0031_1;
@@ -16533,7 +16533,7 @@ IL_004a:
 	{
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:50>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteralD753A0C4DC0CCF16C89C86A23963135820841580, NULL);
+		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral6689C3AF8FED576A6E95B4475499C5CCF30A508D, NULL);
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:51>
 		return _stringLiteralA8F768BCCBAC0AD20DDFFA2F703A98A213E62DF2;
 	}
@@ -16553,9 +16553,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GLBExportFromArea_Export_m26787E54E956F7
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral13756655E8B6D5D317A201219F4DAE601057A5DD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2080DDC5CF3B30F7EF602791791A09BF5159228D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral20E40FF588AF581EC9B7E18A8ECE938D872DF279);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3F8C9CD3DA5EE50C97D10F8D481800947B49AA4C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral900D858FE9ABCD2ED2B25CD27110A78ADCC6EC6B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD20407CCBC6991C356B45C75227DF788AB1DFF0D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA30A517ED0301DE7B0E1D0C9EF95117E66872D4);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE99EB7B323FB71D1956C7BCBB97F770272E03721);
@@ -16566,6 +16569,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GLBExportFromArea_Export_m26787E54E956F7
 	String_t* V_1 = NULL;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	String_t* V_3 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B3_0 = NULL;
+	String_t* G_B5_0 = NULL;
+	String_t* G_B5_1 = NULL;
 	{
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:56>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
@@ -16593,107 +16600,141 @@ IL_0013:
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral2080DDC5CF3B30F7EF602791791A09BF5159228D, NULL);
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:61>
-		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_2;
-		L_2 = GLBExportFromArea_FindObjectsInBoundingBox_m5162D5990CD98D527B28E854A74DBEAA6B0BCFD2(__this, NULL);
-		V_0 = L_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = __this->___excludeRoot;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_3)
+		{
+			G_B4_0 = _stringLiteral3F8C9CD3DA5EE50C97D10F8D481800947B49AA4C;
+			goto IL_0049;
+		}
+		G_B3_0 = _stringLiteral3F8C9CD3DA5EE50C97D10F8D481800947B49AA4C;
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___excludeRoot;
+		NullCheck(L_4);
+		String_t* L_5;
+		L_5 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_4, NULL);
+		G_B5_0 = L_5;
+		G_B5_1 = G_B3_0;
+		goto IL_004e;
+	}
+
+IL_0049:
+	{
+		G_B5_0 = _stringLiteral900D858FE9ABCD2ED2B25CD27110A78ADCC6EC6B;
+		G_B5_1 = G_B4_0;
+	}
+
+IL_004e:
+	{
+		String_t* L_6;
+		L_6 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B5_1, G_B5_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:62>
-		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_3 = V_0;
-		NullCheck(L_3);
-		int32_t L_4;
-		L_4 = List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_inline(L_3, List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_RuntimeMethod_var);
-		int32_t L_5 = L_4;
-		RuntimeObject* L_6 = Box(il2cpp_defaults.int32_class, &L_5);
-		String_t* L_7;
-		L_7 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral20E40FF588AF581EC9B7E18A8ECE938D872DF279, L_6, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_7;
+		L_7 = GLBExportFromArea_FindObjectsInBoundingBox_m5162D5990CD98D527B28E854A74DBEAA6B0BCFD2(__this, NULL);
+		V_0 = L_7;
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:63>
 		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_8 = V_0;
 		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_inline(L_8, List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_RuntimeMethod_var);
-		if (L_9)
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(il2cpp_defaults.int32_class, &L_10);
+		String_t* L_12;
+		L_12 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral20E40FF588AF581EC9B7E18A8ECE938D872DF279, L_11, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_12, NULL);
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:64>
+		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_13 = V_0;
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_inline(L_13, List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_RuntimeMethod_var);
+		if (L_14)
 		{
-			goto IL_005d;
+			goto IL_008c;
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:65>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:66>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral13756655E8B6D5D317A201219F4DAE601057A5DD, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:66>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:67>
 		return;
 	}
 
-IL_005d:
+IL_008c:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:68>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:69>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralDA30A517ED0301DE7B0E1D0C9EF95117E66872D4, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:69>
-		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_10 = V_0;
-		String_t* L_11;
-		L_11 = GLBExportFromArea_GetStatueName_m5684893EEBB065D8A8BCAA1BDD974291821E2A5A(__this, L_10, NULL);
-		V_1 = L_11;
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:70>
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralE99EB7B323FB71D1956C7BCBB97F770272E03721, NULL);
+		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_15 = V_0;
+		String_t* L_16;
+		L_16 = GLBExportFromArea_GetStatueName_m5684893EEBB065D8A8BCAA1BDD974291821E2A5A(__this, L_15, NULL);
+		V_1 = L_16;
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:71>
-		String_t* L_12 = V_1;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
-		L_13 = GLBExportFromArea_CreateTemporaryParent_mDB4C87CD11AEA3BAB8BAEC9C9883AF3B5C8E5A24(__this, L_12, NULL);
-		V_2 = L_13;
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralE99EB7B323FB71D1956C7BCBB97F770272E03721, NULL);
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:72>
-		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_14 = V_0;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = V_2;
-		NullCheck(L_15);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
-		L_16 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_15, NULL);
-		GLBExportFromArea_ReparentObjects_m8F85B9BAA3AC0DE9219C5E30A93B79201EA55E8F(__this, L_14, L_16, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:74>
-		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_17 = V_0;
-		NullCheck(L_17);
-		int32_t L_18;
-		L_18 = List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_inline(L_17, List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_RuntimeMethod_var);
-		int32_t L_19 = L_18;
-		RuntimeObject* L_20 = Box(il2cpp_defaults.int32_class, &L_19);
-		String_t* L_21;
-		L_21 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralD20407CCBC6991C356B45C75227DF788AB1DFF0D, L_20, NULL);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_21, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:76>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = V_2;
-		String_t* L_23;
-		L_23 = GLBExportFromArea_ExportToGLB_m41F41CFBF3D60004211D82816FFC069B19E2F124(__this, L_22, NULL);
-		V_3 = L_23;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:78>
-		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_24 = V_0;
-		GLBExportFromArea_RestoreOriginalParents_m19454A1D7EBB99B0D948C46333C33813524C98CD(__this, L_24, NULL);
+		String_t* L_17 = V_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
+		L_18 = GLBExportFromArea_CreateTemporaryParent_mDB4C87CD11AEA3BAB8BAEC9C9883AF3B5C8E5A24(__this, L_17, NULL);
+		V_2 = L_18;
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:73>
+		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_19 = V_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = V_2;
+		NullCheck(L_20);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_20, NULL);
+		GLBExportFromArea_ReparentObjects_m8F85B9BAA3AC0DE9219C5E30A93B79201EA55E8F(__this, L_19, L_21, NULL);
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:75>
+		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_22 = V_0;
+		NullCheck(L_22);
+		int32_t L_23;
+		L_23 = List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_inline(L_22, List_1_get_Count_m1D92F1E4E0798E505B890E73C2F5E4C9FEA9545C_RuntimeMethod_var);
+		int32_t L_24 = L_23;
+		RuntimeObject* L_25 = Box(il2cpp_defaults.int32_class, &L_24);
+		String_t* L_26;
+		L_26 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralD20407CCBC6991C356B45C75227DF788AB1DFF0D, L_25, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_26, NULL);
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:77>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = V_2;
+		String_t* L_28;
+		L_28 = GLBExportFromArea_ExportToGLB_m41F41CFBF3D60004211D82816FFC069B19E2F124(__this, L_27, NULL);
+		V_3 = L_28;
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:79>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = V_2;
-		GLBExportFromArea_CleanupTemporaryParent_m25ADEE35887C8C7FE121449CF1E3BCD9892442C9(__this, L_25, NULL);
+		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_29 = V_0;
+		GLBExportFromArea_RestoreOriginalParents_m19454A1D7EBB99B0D948C46333C33813524C98CD(__this, L_29, NULL);
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:80>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___childcube;
-		NullCheck(L_26);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)0, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:82>
-		String_t* L_27 = V_3;
-		bool L_28;
-		L_28 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_27, NULL);
-		if (L_28)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = V_2;
+		GLBExportFromArea_CleanupTemporaryParent_m25ADEE35887C8C7FE121449CF1E3BCD9892442C9(__this, L_30, NULL);
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:81>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___childcube;
+		NullCheck(L_31);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:83>
+		String_t* L_32 = V_3;
+		bool L_33;
+		L_33 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_32, NULL);
+		if (L_33)
 		{
-			goto IL_00e0;
+			goto IL_010f;
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:84>
-		String_t* L_29 = V_3;
-		RuntimeObject* L_30;
-		L_30 = GLBExportFromArea_WaitAndUploadGLB_mD64FA2CE92F7F02CC8E13AE788C52DE77E4AA0F1(__this, L_29, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_31;
-		L_31 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_30, NULL);
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:85>
+		String_t* L_34 = V_3;
+		RuntimeObject* L_35;
+		L_35 = GLBExportFromArea_WaitAndUploadGLB_mD64FA2CE92F7F02CC8E13AE788C52DE77E4AA0F1(__this, L_34, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_36;
+		L_36 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_35, NULL);
 	}
 
-IL_00e0:
+IL_010f:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:86>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:87>
 		return;
 	}
 }
@@ -16715,7 +16756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GLBExportFromArea_ValidateBoundingBox_mC
 	String_t* G_B3_0 = NULL;
 	String_t* G_B3_1 = NULL;
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:92>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:93>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___boundingBox;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -16749,7 +16790,7 @@ IL_0025:
 		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B3_1, G_B3_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:93>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:94>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___boundingBox;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -16760,19 +16801,19 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:95>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:96>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
 		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		__this->___boundingBox = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___boundingBox), (void*)L_7);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:96>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:97>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral3E0F2A7B8A36AA0A2FDF454BCB5CD107AD610817, NULL);
 	}
 
 IL_0053:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:98>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:99>
 		return (bool)1;
 	}
 }
@@ -16802,7 +16843,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CE
 	int32_t V_4 = 0;
 	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* V_5 = NULL;
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:103>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:104>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___boundingBox;
 		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
@@ -16810,7 +16851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CE
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, (0.5f), NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:104>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:105>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___boundingBox;
 		NullCheck(L_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
@@ -16824,11 +16865,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CE
 		L_10 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1CF21D6DC0A0C8CC2A7648490FEBCD874FA943B7, L_6, L_9, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_10, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:106>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:107>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:108>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:109>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:110>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:111>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___boundingBox;
 		NullCheck(L_11);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
@@ -16842,7 +16883,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CE
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_16;
 		L_16 = Physics_OverlapBox_m400B65BA73CA857B619D11D8B98805AB6936EFB8(L_12, L_13, L_15, NULL);
 		V_1 = L_16;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:112>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:113>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_17 = V_1;
 		NullCheck(L_17);
 		int32_t L_18 = ((int32_t)(((RuntimeArray*)L_17)->max_length));
@@ -16850,11 +16891,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CE
 		String_t* L_20;
 		L_20 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral1CDC251BEA6B4DF4800E1FA8713CD0C94A25906A, L_19, NULL);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_20, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:114>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:115>
 		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_21 = (List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66*)il2cpp_codegen_object_new(List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66_il2cpp_TypeInfo_var);
 		List_1__ctor_mD75B2AB0C91F6FE7649C83C0A5E964E0F8541BD5(L_21, List_1__ctor_mD75B2AB0C91F6FE7649C83C0A5E964E0F8541BD5_RuntimeMethod_var);
 		V_2 = L_21;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:116>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:117>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_22 = V_1;
 		V_3 = L_22;
 		V_4 = 0;
@@ -16863,15 +16904,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CE
 
 IL_007c:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:116>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:117>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_23 = V_3;
 		int32_t L_24 = V_4;
 		NullCheck(L_23);
 		int32_t L_25 = L_24;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
 		V_5 = L_26;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:118>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:119>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:120>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_27 = V_5;
 		NullCheck(L_27);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
@@ -16900,7 +16941,7 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:121>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:122>
 		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_35 = V_2;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_36 = V_5;
 		NullCheck(L_36);
@@ -16927,7 +16968,7 @@ IL_00c8:
 
 IL_00ce:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:116>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:117>
 		int32_t L_43 = V_4;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_44 = V_3;
 		NullCheck(L_44);
@@ -16937,7 +16978,7 @@ IL_00ce:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:124>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:125>
 		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_45 = V_2;
 		return L_45;
 	}
@@ -16952,7 +16993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:129>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:130>
 		String_t* L_0 = ___0_name;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_1, L_0, NULL);
@@ -16974,7 +17015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GLBExportFromArea_ReparentObjects_m8F85B
 	Enumerator_t3E55141C5E8F86A1D8829B5828EF1280F5956E15 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:134>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:135>
 		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_0 = ___0_objects;
 		NullCheck(L_0);
 		Enumerator_t3E55141C5E8F86A1D8829B5828EF1280F5956E15 L_1;
@@ -16999,10 +17040,10 @@ FINALLY_0027:
 
 IL_0009_1:
 			{
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:134>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:135>
 				ObjectParentPair_t88B18CA17375399ACAA35E0AA5DC3AF7AB6DB323* L_2;
 				L_2 = Enumerator_get_Current_m4BF744996235CEFF2A887AE0807F837B4CBDAE60_inline((&V_0), Enumerator_get_Current_m4BF744996235CEFF2A887AE0807F837B4CBDAE60_RuntimeMethod_var);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:136>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:137>
 				NullCheck(L_2);
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = L_2->___obj;
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = ___1_newParent;
@@ -17012,7 +17053,7 @@ IL_0009_1:
 
 IL_001c_1:
 			{
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:134>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:135>
 				bool L_5;
 				L_5 = Enumerator_MoveNext_m828F19B20A203DDF028F7FB405B114C4032965F1((&V_0), Enumerator_MoveNext_m828F19B20A203DDF028F7FB405B114C4032965F1_RuntimeMethod_var);
 				if (L_5)
@@ -17032,7 +17073,7 @@ IL_001c_1:
 
 IL_0035:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:138>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:139>
 		return;
 	}
 }
@@ -17064,21 +17105,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GLBExportFromArea_ExportToGLB_m41F4
 	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:143>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:144>
 		il2cpp_codegen_runtime_class_init_inline(PersistentDataPaths_t0A81D289AA649D8C38F58175E0BE8AF0E1734520_il2cpp_TypeInfo_var);
 		String_t* L_0 = ((PersistentDataPaths_t0A81D289AA649D8C38F58175E0BE8AF0E1734520_StaticFields*)il2cpp_codegen_static_fields_for(PersistentDataPaths_t0A81D289AA649D8C38F58175E0BE8AF0E1734520_il2cpp_TypeInfo_var))->___Runtime;
 		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_0, _stringLiteral1CA7AEF60C3A87345985CAD4EF10C145111F91F3, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:144>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:145>
 		String_t* L_2 = V_0;
 		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_3;
 		L_3 = Directory_CreateDirectory_m16EC5CE8561A997C6635E06DC24C77590F29D94F(L_2, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:145>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:146>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:147>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:148>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:149>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_4 = (TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)SZArrayNew(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_il2cpp_TypeInfo_var, (uint32_t)1);
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_5 = L_4;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = ___0_rootObject;
@@ -17092,7 +17133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GLBExportFromArea_ExportToGLB_m41F4
 		ExportContext__ctor_m55CC7156E1BDE7B8EA95782B91BB093C801629B0(L_8, NULL);
 		GLTFSceneExporter_tF2AC15914A44677B33E3F8D2D5F691FE431BFE4C* L_9 = (GLTFSceneExporter_tF2AC15914A44677B33E3F8D2D5F691FE431BFE4C*)il2cpp_codegen_object_new(GLTFSceneExporter_tF2AC15914A44677B33E3F8D2D5F691FE431BFE4C_il2cpp_TypeInfo_var);
 		GLTFSceneExporter__ctor_m04171C558FDDB83E681865469AEC6C7AA3877879(L_9, L_5, L_8, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:149>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:150>
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_10;
 		L_10 = DateTime_get_Now_m636CB9651A9099D20BA1CF813A0C69637317325C(NULL);
@@ -17100,7 +17141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GLBExportFromArea_ExportToGLB_m41F4
 		String_t* L_11;
 		L_11 = DateTime_ToString_m6963A84785C320DA776C9FCFFEDAF26C8F1A8D78((&V_4), _stringLiteral4ECC90C97C67FE2AC6ABF15A38DF5C4F3B767E63, NULL);
 		V_1 = L_11;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:150>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:151>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = ___0_rootObject;
 		NullCheck(L_12);
 		String_t* L_13;
@@ -17109,12 +17150,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GLBExportFromArea_ExportToGLB_m41F4
 		String_t* L_15;
 		L_15 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral55B2F665E3E6FB459C2EE80DA4968A038C20BDF6, L_13, _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C, L_14, NULL);
 		V_2 = L_15;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:151>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:152>
 		String_t* L_16 = V_0;
 		String_t* L_17 = V_2;
 		NullCheck(L_9);
 		GLTFSceneExporter_SaveGLB_m343731B3A6A9E0FA209C44ECC16B310D3BE351E4(L_9, L_16, L_17, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:153>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:154>
 		String_t* L_18 = V_0;
 		String_t* L_19 = V_2;
 		String_t* L_20;
@@ -17122,13 +17163,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GLBExportFromArea_ExportToGLB_m41F4
 		String_t* L_21;
 		L_21 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_18, L_20, NULL);
 		V_3 = L_21;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:154>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:155>
 		String_t* L_22 = V_3;
 		String_t* L_23;
 		L_23 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD1BBE175BCEE4CFFA65C785056A3C05C2A233439, L_22, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_23, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:156>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:157>
 		String_t* L_24 = V_3;
 		return L_24;
 	}
@@ -17149,7 +17190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GLBExportFromArea_RestoreOriginalParents
 	memset((&V_0), 0, sizeof(V_0));
 	ObjectParentPair_t88B18CA17375399ACAA35E0AA5DC3AF7AB6DB323* V_1 = NULL;
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:161>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:162>
 		List_1_tF7EB7F6D8BA7ABCFF8FE97762CF29B3ECA8CED66* L_0 = ___0_objects;
 		NullCheck(L_0);
 		Enumerator_t3E55141C5E8F86A1D8829B5828EF1280F5956E15 L_1;
@@ -17174,11 +17215,11 @@ FINALLY_002e:
 
 IL_0009_1:
 			{
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:161>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:162>
 				ObjectParentPair_t88B18CA17375399ACAA35E0AA5DC3AF7AB6DB323* L_2;
 				L_2 = Enumerator_get_Current_m4BF744996235CEFF2A887AE0807F837B4CBDAE60_inline((&V_0), Enumerator_get_Current_m4BF744996235CEFF2A887AE0807F837B4CBDAE60_RuntimeMethod_var);
 				V_1 = L_2;
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:163>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:164>
 				ObjectParentPair_t88B18CA17375399ACAA35E0AA5DC3AF7AB6DB323* L_3 = V_1;
 				NullCheck(L_3);
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = L_3->___obj;
@@ -17191,7 +17232,7 @@ IL_0009_1:
 
 IL_0023_1:
 			{
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:161>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:162>
 				bool L_7;
 				L_7 = Enumerator_MoveNext_m828F19B20A203DDF028F7FB405B114C4032965F1((&V_0), Enumerator_MoveNext_m828F19B20A203DDF028F7FB405B114C4032965F1_RuntimeMethod_var);
 				if (L_7)
@@ -17211,7 +17252,7 @@ IL_0023_1:
 
 IL_003c:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:165>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:166>
 		return;
 	}
 }
@@ -17225,11 +17266,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GLBExportFromArea_CleanupTemporaryParent
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:169>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:170>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_tempParent;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_0, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:170>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:171>
 		return;
 	}
 }
@@ -17300,16 +17341,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F31
 	String_t* V_5 = NULL;
 	String_t* V_6 = NULL;
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:251>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:252>
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_0 = (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)il2cpp_codegen_object_new(Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052(L_0, Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
 		V_0 = L_0;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:252>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:253>
 		String_t* L_1 = ___0_text;
 		NullCheck(L_1);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2;
 		L_2 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_1, ((int32_t)10), 0, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:254>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:255>
 		V_1 = L_2;
 		V_2 = 0;
 		goto IL_0067;
@@ -17317,18 +17358,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F31
 
 IL_0014:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:254>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:255>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = V_1;
 		int32_t L_4 = V_2;
 		NullCheck(L_3);
 		int32_t L_5 = L_4;
 		String_t* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:256>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:257>
 		NullCheck(L_6);
 		String_t* L_7;
 		L_7 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_6, NULL);
 		V_3 = L_7;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:257>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:258>
 		String_t* L_8 = V_3;
 		bool L_9;
 		L_9 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_8, NULL);
@@ -17338,14 +17379,14 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:259>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:260>
 		String_t* L_10 = V_3;
 		String_t* L_11 = ___1_separator;
 		NullCheck(L_10);
 		int32_t L_12;
 		L_12 = String_IndexOf_m69E9BDAFD93767C85A7FF861B453415D3B4A200F(L_10, L_11, NULL);
 		V_4 = L_12;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:260>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:261>
 		int32_t L_13 = V_4;
 		if ((((int32_t)L_13) < ((int32_t)0)))
 		{
@@ -17353,7 +17394,7 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:262>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:263>
 		String_t* L_14 = V_3;
 		int32_t L_15 = V_4;
 		NullCheck(L_14);
@@ -17363,7 +17404,7 @@ IL_0014:
 		String_t* L_17;
 		L_17 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_16, NULL);
 		V_5 = L_17;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:263>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:264>
 		String_t* L_18 = V_3;
 		int32_t L_19 = V_4;
 		String_t* L_20 = ___1_separator;
@@ -17377,7 +17418,7 @@ IL_0014:
 		String_t* L_23;
 		L_23 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_22, NULL);
 		V_6 = L_23;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:264>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:265>
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_24 = V_0;
 		String_t* L_25 = V_5;
 		String_t* L_26 = V_6;
@@ -17393,7 +17434,7 @@ IL_0063:
 
 IL_0067:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:254>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:255>
 		int32_t L_28 = V_2;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_29 = V_1;
 		NullCheck(L_29);
@@ -17403,7 +17444,7 @@ IL_0067:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:267>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:268>
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_30 = V_0;
 		return L_30;
 	}
@@ -17485,7 +17526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CWaitAndUploadGLBU3Eb__14_0_m8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:177>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:178>
 		bool L_0 = ((StreamingAssetsExtractor_t71B6D16D8F100E4F54F3949C7EBE1E94E155FA31_StaticFields*)il2cpp_codegen_static_fields_for(StreamingAssetsExtractor_t71B6D16D8F100E4F54F3949C7EBE1E94E155FA31_il2cpp_TypeInfo_var))->___IsReady;
 		return L_0;
 	}
@@ -17510,7 +17551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0__ctor_m1F983D1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CWaitAndUploadGLBU3Eb__1_m3E0025F55F2F9BF48727E3F5CA73E3FC796AC6B2 (U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* __this, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___0_result, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:192>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:193>
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_0 = ___0_result;
 		__this->___credentials = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___credentials), (void*)L_0);
@@ -17521,7 +17562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CWaitAndUplo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CWaitAndUploadGLBU3Eb__2_mA04771BF565977CCFC55E91909F56B2EBAEEDB10 (U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:215>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:216>
 		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_0 = __this->___uploadTask;
 		NullCheck(L_0);
 		bool L_1;
@@ -17655,24 +17696,24 @@ FAULT_0100:
 IL_001c_1:
 			{
 				__this->___U3CU3E1__state = (-1);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:229>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:230>
 				il2cpp_codegen_runtime_class_init_inline(StreamingAssetsPaths_tE8DD2EB9BC88F235579AD52D176B02E9714C76D2_il2cpp_TypeInfo_var);
 				String_t* L_4 = ((StreamingAssetsPaths_tE8DD2EB9BC88F235579AD52D176B02E9714C76D2_StaticFields*)il2cpp_codegen_static_fields_for(StreamingAssetsPaths_tE8DD2EB9BC88F235579AD52D176B02E9714C76D2_il2cpp_TypeInfo_var))->___Credentials;
 				il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 				String_t* L_5;
 				L_5 = Path_Combine_mA07781A88C6F9067A942D5C11B9703DA8518E4C3(L_4, _stringLiteral7A3F57C63A03C63BFBCA30FEFEC4CD6ED9C7222A, _stringLiteral7C53B89FDB7D3647F73B30CAAA90CB3E3A5103EC, NULL);
 				V_3 = L_5;
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:230>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:231>
 				__this->___U3CseparatorU3E5__2 = _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CseparatorU3E5__2), (void*)_stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:232>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:233>
 				String_t* L_6 = V_3;
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_7;
 				L_7 = UnityWebRequest_Get_m1A332EE069BB5052368307F254A5A7627BB5FD86(L_6, NULL);
 				__this->___U3CrequestU3E5__3 = L_7;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrequestU3E5__3), (void*)L_7);
 				__this->___U3CU3E1__state = ((int32_t)-3);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:234>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:235>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_8 = __this->___U3CrequestU3E5__3;
 				NullCheck(L_8);
 				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_9;
@@ -17687,7 +17728,7 @@ IL_001c_1:
 IL_0076_1:
 			{
 				__this->___U3CU3E1__state = ((int32_t)-3);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:236>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:237>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_10 = __this->___U3CrequestU3E5__3;
 				NullCheck(L_10);
 				int32_t L_11;
@@ -17698,7 +17739,7 @@ IL_0076_1:
 				}
 			}
 			{
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:238>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:239>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_12 = __this->___U3CrequestU3E5__3;
 				NullCheck(L_12);
 				String_t* L_13;
@@ -17707,18 +17748,18 @@ IL_0076_1:
 				L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral54A82987B89E6EA578288A223F6D2C602A7E0353, L_13, NULL);
 				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 				Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_14, NULL);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:239>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:240>
 				Action_1_tE974880775FC548AAD9D5D87454AA897D3B56023* L_15 = __this->___onLoaded;
 				NullCheck(L_15);
 				Action_1_Invoke_m32413780CE4E13CFED4992C381592E51CAC12E23_inline(L_15, (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)NULL, NULL);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:240>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:241>
 				V_0 = (bool)0;
 				goto IL_00ed_1;
 			}
 
 IL_00b6_1:
 			{
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:243>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:244>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_16 = __this->___U3CrequestU3E5__3;
 				NullCheck(L_16);
 				DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB* L_17;
@@ -17727,7 +17768,7 @@ IL_00b6_1:
 				String_t* L_18;
 				L_18 = DownloadHandler_get_text_mA6DE5CB2647A21E577B963708DC3D0DA4DBFE7D8(L_17, NULL);
 				V_4 = L_18;
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:244>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:245>
 				GLBExportFromArea_tA854AF2385DBB0B89F60DEDDEEBEFDF599915BF5* L_19 = V_2;
 				String_t* L_20 = V_4;
 				String_t* L_21 = __this->___U3CseparatorU3E5__2;
@@ -17735,12 +17776,12 @@ IL_00b6_1:
 				Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_22;
 				L_22 = GLBExportFromArea_ParseCredentials_m87A5F143DAE1D68DA80E58A33D46FB0B4BEEB700(L_19, L_20, L_21, NULL);
 				V_5 = L_22;
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:245>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:246>
 				Action_1_tE974880775FC548AAD9D5D87454AA897D3B56023* L_23 = __this->___onLoaded;
 				Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_24 = V_5;
 				NullCheck(L_23);
 				Action_1_Invoke_m32413780CE4E13CFED4992C381592E51CAC12E23_inline(L_23, L_24, NULL);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:246>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:247>
 				U3CLoadCredentialsCoroutineU3Ed__15_U3CU3Em__Finally1_m2403BE57AACB6EEEB0E717A6DA2012FA8E188DD5(__this, NULL);
 				goto IL_00f5_1;
 			}
@@ -17755,7 +17796,7 @@ IL_00f5_1:
 			{
 				__this->___U3CrequestU3E5__3 = (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrequestU3E5__3), (void*)(UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)NULL);
-				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:247>
+				//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:248>
 				V_0 = (bool)0;
 				goto IL_0107;
 			}
@@ -17928,10 +17969,10 @@ IL_0026:
 		U3CU3Ec__DisplayClass14_0__ctor_m1F983D1304DAF4919BE0B3670EFA31D2781DA31C(L_3, NULL);
 		__this->___U3CU3E8__1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1), (void*)L_3);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:176>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:177>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral3006753FDFBCD215F8C3E02E0E35B3C0C5F068D5, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:177>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:178>
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tF5AEB7D778F9040F699B54B7E448FA9B498E5079_il2cpp_TypeInfo_var);
 		Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_4 = ((U3CU3Ec_tF5AEB7D778F9040F699B54B7E448FA9B498E5079_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tF5AEB7D778F9040F699B54B7E448FA9B498E5079_il2cpp_TypeInfo_var))->___U3CU3E9__14_0;
 		Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_5 = L_4;
@@ -17970,19 +18011,19 @@ IL_0062:
 IL_0075:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:178>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:179>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral627261A267157018F01AA8AB5D69AF62EB77B072, NULL);
 	}
 	try
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:183>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:184>
 		String_t* L_10 = __this->___glbFullPath;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
 		L_11 = File_ReadAllBytes_m704CBBA3F130C94F5A3E0BE2A93D9E9D79DC3E24(L_10, NULL);
 		__this->___U3CglbDataU3E5__2 = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CglbDataU3E5__2), (void*)L_11);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:184>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:185>
 		goto IL_00b8;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -17998,9 +18039,9 @@ IL_0075:
 CATCH_0099:
 	{
 		Exception_t* L_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:185>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:186>
 		V_4 = L_12;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:187>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:188>
 		Exception_t* L_13 = V_4;
 		NullCheck(L_13);
 		String_t* L_14;
@@ -18009,7 +18050,7 @@ CATCH_0099:
 		L_15 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral24FCB0B381B65D67094CD84590EDBF46DDD9A685)), L_14, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_15, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:188>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:189>
 		V_0 = (bool)0;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_025d;
@@ -18017,12 +18058,12 @@ CATCH_0099:
 
 IL_00b8:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:191>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:192>
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_16 = __this->___U3CU3E8__1;
 		NullCheck(L_16);
 		L_16->___credentials = (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___credentials), (void*)(Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:192>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:193>
 		GLBExportFromArea_tA854AF2385DBB0B89F60DEDDEEBEFDF599915BF5* L_17 = V_2;
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_18 = __this->___U3CU3E8__1;
 		Action_1_tE974880775FC548AAD9D5D87454AA897D3B56023* L_19 = (Action_1_tE974880775FC548AAD9D5D87454AA897D3B56023*)il2cpp_codegen_object_new(Action_1_tE974880775FC548AAD9D5D87454AA897D3B56023_il2cpp_TypeInfo_var);
@@ -18039,11 +18080,11 @@ IL_00b8:
 IL_00ea:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:194>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:195>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:196>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:197>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:198>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:199>
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_21 = __this->___U3CU3E8__1;
 		NullCheck(L_21);
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_22 = L_21->___credentials;
@@ -18103,34 +18144,34 @@ IL_00ea:
 
 IL_015a:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:200>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:201>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralD3C3E2B70F70FD1199F3152A82E2FFE8CD96A1F3, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:201>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:202>
 		return (bool)0;
 	}
 
 IL_0166:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:204>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:205>
 		String_t* L_35 = __this->___glbFullPath;
 		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_36;
 		L_36 = Path_GetFileName_mB1A8CE314EE250B06E3D33142315E2BD3A75D1D6(L_35, NULL);
 		V_3 = L_36;
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:205>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:206>
 		String_t* L_37 = V_3;
 		String_t* L_38;
 		L_38 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralF0C73D20D63A17C30B1352CCE3144CF7503830D6, L_37, _stringLiteralFFEF3DBE279EE1F92E1E2E46F45BC18EBBF55A1A, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_38, NULL);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:207>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:208>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:209>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:210>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:211>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:212>
 		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:213>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:214>
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_39 = __this->___U3CU3E8__1;
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_40 = __this->___U3CU3E8__1;
 		NullCheck(L_40);
@@ -18163,7 +18204,7 @@ IL_0166:
 		NullCheck(L_39);
 		L_39->___uploadTask = L_54;
 		Il2CppCodeGenWriteBarrier((void**)(&L_39->___uploadTask), (void*)L_54);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:215>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:216>
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_55 = __this->___U3CU3E8__1;
 		Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_56 = (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)il2cpp_codegen_object_new(Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457_il2cpp_TypeInfo_var);
 		Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22(L_56, L_55, (intptr_t)((void*)U3CU3Ec__DisplayClass14_0_U3CWaitAndUploadGLBU3Eb__2_mA04771BF565977CCFC55E91909F56B2EBAEEDB10_RuntimeMethod_var), NULL);
@@ -18178,7 +18219,7 @@ IL_0166:
 IL_0217:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:217>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:218>
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_58 = __this->___U3CU3E8__1;
 		NullCheck(L_58);
 		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_59 = L_58->___uploadTask;
@@ -18191,7 +18232,7 @@ IL_0217:
 		}
 	}
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:219>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:220>
 		U3CU3Ec__DisplayClass14_0_t8D26266F878575443CC803D9ADE2E41E92CFEF33* L_61 = __this->___U3CU3E8__1;
 		NullCheck(L_61);
 		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_62 = L_61->___uploadTask;
@@ -18207,14 +18248,14 @@ IL_0217:
 
 IL_0251:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:223>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:224>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralE66105477963029954E39104D2E0A70962F5B4F6, NULL);
 	}
 
 IL_025b:
 	{
-		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:225>
+		//<source_info:C:/Users/mau-k/source/repos/Antimonument-Extended/Antimonument-Extended/Assets/!_Project/Systems/GLBExportArea/GLBExportFromArea.cs:226>
 		return (bool)0;
 	}
 
