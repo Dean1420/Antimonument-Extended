@@ -5864,7 +5864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6736562108048168994, guid: 34dd3c28607b4f747950566ebd81a0be, type: 3}
       propertyPath: m_Name
-      value: Portable Colour Wheel
+      value: Colour Wheel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

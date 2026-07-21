@@ -155,15 +155,22 @@ private int LayerMaskToLayer(LayerMask layerMask)
     if (hull != null)
     {
         Debug.Log($"SLICE >>> Successfully created hull for {target.name}");
-        
+
         GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
-        SetupSlicedComponent(upperHull, sliceableLayerNumber, paintData);
-        slicedObjects.Add(upperHull);
-        
-        GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
-        SetupSlicedComponent(lowerHull, sliceableLayerNumber, paintData);
-        slicedObjects.Add(lowerHull);
-        
+SetupSlicedComponent(upperHull, sliceableLayerNumber, paintData);
+slicedObjects.Add(upperHull);
+
+GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
+SetupSlicedComponent(lowerHull, sliceableLayerNumber, paintData);
+slicedObjects.Add(lowerHull);
+
+var originalInfo = target.GetComponent<OriginalNameInfo>();
+if (originalInfo != null)
+{
+    lowerHull.AddComponent<OriginalNameInfo>().originalName = originalInfo.originalName;
+    upperHull.AddComponent<OriginalNameInfo>().originalName = originalInfo.originalName;
+}
+    
         HandleObjectCleanup(target);
 
         if (sliceSound != null)
@@ -209,7 +216,7 @@ private int LayerMaskToLayer(LayerMask layerMask)
         XRGrabInteractable grabInteractable = slicedObject.AddComponent<XRGrabInteractable>();
         grabInteractable.useDynamicAttach = true;
 
-        // Cache the texture für das Paint System
+        // Cache the texture fï¿½r das Paint System
         Paint paintScript = FindObjectOfType<Paint>();
         if (paintScript != null)
         {

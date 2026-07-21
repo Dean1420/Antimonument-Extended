@@ -76,6 +76,10 @@ public class StatueSpawnController : MonoBehaviour
             lifeSizeStatue.transform.localScale *= statue.ScaleFactor;
             lifeSizeStatue.StatueValues = statue;
             lifeSizeStatue.gameObject.SetActive(false);
+
+            var info = lifeSizeStatue.gameObject.AddComponent<OriginalNameInfo>();
+            info.originalName = lifeSizeStatue.gameObject.name;
+
             _statueInstances.Add(lifeSizeStatue);
         }
     }

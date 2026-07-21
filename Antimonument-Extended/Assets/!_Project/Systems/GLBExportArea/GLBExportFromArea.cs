@@ -43,7 +43,14 @@ private string GetStatueName(List<ObjectParentPair> objects)
     {
         if (pair.obj.CompareTag("Paintable"))
         {
-            return pair.obj.name;
+            var info = pair.obj.GetComponent<OriginalNameInfo>();
+            return info != null ? info.originalName : pair.obj.name;
+        }
+
+        if (pair.originalParent != null && pair.originalParent.CompareTag("Paintable"))
+        {
+            var info = pair.originalParent.GetComponent<OriginalNameInfo>();
+            return info != null ? info.originalName : pair.originalParent.name;
         }
     }
 

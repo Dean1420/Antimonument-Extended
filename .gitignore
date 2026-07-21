@@ -35,6 +35,9 @@ publish/
 /[Uu]ser[Ss]ettings/
 /[Mm]emory[Cc]aptures/
 
+# IL2CPP backup folder
+[Bb]ackupThisFolder_[Bb]utDontShipItWithYourGame/
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
@@ -57,7 +60,8 @@ publish/
 ._*
 
 # Custom folder icons
-Icon
+Icon
+
 
 # Volume root files
 .DocumentRevisions-V100
